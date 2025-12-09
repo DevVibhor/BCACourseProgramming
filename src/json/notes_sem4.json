@@ -1,0 +1,124 @@
+{
+    "data": [
+        {
+            "question": "What is graphics.h in C?",
+            "answer": "graphics.h is a library for graphics programming in C that provides support for 2D graphics, including drawing shapes, lines, circles, rectangles, displaying text and images. It was developed to provide a basic set of functions for creating graphics-based applications in C and is widely used in educational settings as a starting point for teaching graphics programming.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "How do you include graphics.h in your C program?",
+            "answer": "To include graphics.h in your C program, you need to use the #include preprocessor directive, like this:",
+            "code": "#include <graphics.h>",
+            "compile": false
+        },
+        {
+            "question": "How do you initialize graphics mode in C using graphics.h?",
+            "answer": "To initialize graphics mode in C using graphics.h, you can use the initgraph() function. The initgraph() function takes three arguments: the width and height of the graphics window and the path to the driver file for the graphics card. For example:",
+            "code": "initgraph(&gd, &gm, \"C:\\\\TC\\\\BGI\");",
+            "compile": false
+        },
+        {
+            "question": "How do you display a line in C using graphics.h?",
+            "answer": "To display a line in C using graphics.h, you can use the line() function. The line() function takes four arguments: the x and y coordinates of the starting point of the line, and the x and y coordinates of the end point of the line. For example:",
+            "code": "line(100, 100, 200, 200);\n",
+            "compile": false
+        },
+        {
+            "question": "How do you display a circle in C using graphics.h?",
+            "answer": "To display a circle in C using graphics.h, you can use the circle() function. The circle() function takes three arguments: the x and y coordinates of the center of the circle, and the radius of the circle. For example:",
+            "code": "circle(100, 100, 50);",
+            "compile": false
+        },
+        {
+            "question": "How do you display text in C using graphics.h?",
+            "answer": "To display text in C using graphics.h, you can use the outtext() function. The outtext() function takes two arguments: the x and y coordinates of the starting point of the text, and the text string to be displayed. For example:",
+            "code": "outtextxy(100, 100, \"Hello, World!\");\n",
+            "compile": false
+        },
+        {
+            "question": "How do you handle user input in C using graphics.h?",
+            "answer": "To handle user input in C using graphics.h, you can use the getch() function. The getch() function waits for the user to press a key and then returns the ASCII value of the key. For example:",
+            "code": "char c = getch();\n",
+            "compile": false
+        },
+        {
+            "question": "How do you set the background color in C using graphics.h?",
+            "answer": "To set the background color in C using graphics.h, you can use the setbkcolor() function. The setbkcolor() function takes a single argument, the color code for the desired background color. For example:",
+            "code": "setbkcolor(WHITE);\n",
+            "compile": false
+        },
+        {
+            "question": "How do you draw a rectangle in C using graphics.h?",
+            "answer": "To draw a rectangle in C using graphics.h, you can use the rectangle() function. The rectangle() function takes four arguments: the x and y coordinates of the starting point of the rectangle, and the x and y coordinates of the bottom-right point of the rectangle. For example:",
+            "code": "rectangle(100, 100, 200, 200);\n",
+            "compile": false
+        },
+        {
+            "question": "How do you set the fill color for shapes in C using graphics.h?",
+            "answer": "To set the fill color for shapes in C using graphics.h, you can use the setfillstyle() function. The setfillstyle() function takes two arguments: the fill pattern and the fill color. For example:",
+            "code": "setfillstyle(SOLID_FILL, BLUE);\nfloodfill(100, 100, WHITE);",
+            "compile": false
+        },
+        {
+            "question": "How do you clear the graphics screen in C using graphics.h?",
+            "answer": "To clear the graphics screen in C using graphics.h, you can use the cleardevice() function. The cleardevice() function takes no arguments and simply clears the graphics screen to the current background color. For example:",
+            "code": "cleardevice();\n",
+            "compile": false
+        },
+        {
+            "question": "How do you change the current drawing position in C using graphics.h?",
+            "answer": "To change the current drawing position in C using graphics.h, you can use the moveto() function. The moveto() function takes two arguments: the x and y coordinates of the new drawing position. For example:",
+            "code": "moveto(100, 100);\n",
+            "compile": false
+        },
+        {
+            "question": "How do you set the current drawing color in C using graphics.h?",
+            "answer": "To set the current drawing color in C using graphics.h, you can use the setcolor() function. The setcolor() function takes a single argument, the color code for the desired drawing color. For example:",
+            "code": "setcolor(RED);\n",
+            "compile": false
+        },
+        {
+            "question": "How do you draw an arc in C using graphics.h?",
+            "answer": "To draw an arc in C using graphics.h, you can use the arc() function. The arc() function takes six arguments: the x and y coordinates of the center of the circle, the start angle and end angle of the arc, and the x and y coordinates of a point on the circumference of the circle. For example:",
+            "code": "arc(100, 100, 0, 90, 50);\n",
+            "compile": false
+        },
+        {
+            "question": "How do you set the current text style and size in C using graphics.h?",
+            "answer": "To set the current text style and size in C using graphics.h, you can use the settextstyle() function. The settextstyle() function takes four arguments: the font, direction, char size and font type. For example:",
+            "code": "settextstyle(TRIPLEX_FONT, HORIZ_DIR, 2);\n",
+            "compile": false
+        },
+        {
+            "question": "How do you set the current text alignment in C using graphics.h?",
+            "answer": "To set the current text alignment in C using graphics.h, you can use the settextjustify() function. The settextjustify() function takes two arguments: the horizontal alignment and the vertical alignment. For example:",
+            "code": "settextjustify(CENTER_TEXT, CENTER_TEXT);",
+            "compile": false
+        },
+        {
+            "question": "How do you draw a circle in C using graphics.h?",
+            "answer": "To draw a circle in C using graphics.h, you can use the circle() function. The circle() function takes three arguments: the x and y coordinates of the center of the circle and the radius of the circle. For example:",
+            "code": "circle(100, 100, 50);",
+            "compile": false
+        },
+        {
+            "question": "How do you draw a line in C using graphics.h?",
+            "answer": "To draw a line in C using graphics.h, you can use the line() function. The line() function takes four arguments: the x and y coordinates of the starting point of the line and the x and y coordinates of the end point of the line. For example:",
+            "code": "line(100, 100, 200, 200);",
+            "compile": false
+        },
+        {
+            "question": "How do you draw a filled polygon in C using graphics.h?",
+            "answer": "To draw a filled polygon in C using graphics.h, you can use the fillpoly() function. The fillpoly() function takes two arguments: the number of vertices in the polygon and an array of vertices, where each vertex is a pair of x and y coordinates. For example:",
+            "code": "int vertices[] = {100, 100, 200, 100, 150, 150};\nfillpoly(3, vertices);\n",
+            "compile": false
+        },
+        {
+            "question": "How do you draw a pie chart in C using graphics.h?",
+            "answer": "To draw a pie chart in C using graphics.h, you can use the pieslice() function. The pieslice() function takes five arguments: the x and y coordinates of the center of the circle, the start angle and end angle of the pie slice, and a flag indicating whether to draw a line from the center of the circle to the circumference. For example:",
+            "code": "pieslice(100, 100, 0, 90, 100);\n",
+            "compile": false
+        }
+    ]
+}

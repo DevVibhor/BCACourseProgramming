@@ -1,0 +1,88 @@
+{
+    "data": [
+        {
+            "question": "What is data structure?",
+            "answer": "A data structure is a way of organizing and storing data in a computer so that it can be efficiently accessed, manipulated, and managed. Data structures are used to implement abstract data types, which define the operations that can be performed on the data and the relationships between the data elements.\n\nThere are several types of data structures in computer science, including:\n\n• Primitive Data Structures: Simple data structures that store a single value, such as integers, floating-point numbers, and characters.\n\n• Linear Data Structures: Data structures that store elements in a linear sequence, such as arrays and linked lists.\n\n• Non-Linear Data Structures: Data structures that store elements in a hierarchical or networked structure, such as trees and graphs.\n\n• Static Data Structures: Data structures with a fixed size, such as arrays.\n\n• Dynamic Data Structures: Data structures with a flexible size, such as linked lists and trees.\n\n• Hierarchical Data Structures: Data structures that store elements in a hierarchical relationship, such as trees.\n\n• Network Data Structures: Data structures that store elements in a networked relationship, such as graphs.\n\n• Abstract Data Structures: Data structures that define a set of operations to be performed on the data, such as stacks, queues, and trees.",
+            "code": "",
+            "compile": false
+        },
+        {
+            "question": "What is a matrix?",
+            "answer": "In C, a matrix can be represented as a two-dimensional array of elements of a specific data type, such as integers or floats. The elements of a matrix can be accessed using a pair of indices, where the first index refers to the row number and the second index refers to the column number.\n\nHere's an example of a 2x3 matrix:",
+            "code": "#include <stdio.h>\n\nint main() {\n    // Declare a 2x3 integer matrix\n    int matrix[2][3] = { {1, 2, 3}, {4, 5, 6} };\n    \n    // Variables for iterating through the rows and columns\n    int row, col;\n    \n    // Loop through each row\n    for (row = 0; row < 2; row++) {\n        // Loop through each column in the current row\n        for (col = 0; col < 3; col++) {\n            // Print the value of the current element\n            printf(\"%d \", matrix[row][col]);\n        }\n        // Move to the next line after printing all columns in the current row\n        printf(\"\\n\");\n    }\n    \n    // Return 0 to indicate successful execution\n    return 0;\n}",
+            "compile": true
+        },
+        {
+            "question": "What are arrays?",
+            "answer": "Arrays are a type of data structure that store a collection of elements of the same data type, organized in a contiguous block of memory. Arrays are declared using the syntax type name[size];, where type is the data type of the elements in the array, name is the name of the array, and size is the number of elements in the array.\n\nThere are two main types of arrays:\n1. One-dimensional arrays: A one-dimensional array stores a linear sequence of elements, where each element is represented by a single index. For example, you can use a one-dimensional array to store a collection of integers, where each element in the array represents a single integer value.\n\n2. Multi-dimensional arrays: A multi-dimensional array stores elements in a grid-like structure, where each element is represented by multiple indices. For example, you can use a two-dimensional array to store a matrix of numbers, where each element in the array represents a single cell in the matrix.",
+            "code": "#include <stdio.h>\n\nint main()\n{\n    // Declaring and initializing a 1D array\n    int arr1[5] = {1, 2, 3, 4, 5};\n    int i;\n\n    // Printing elements of 1D array\n    printf(\"1D Array elements: \");\n    for (i = 0; i < 5; i++) {\n        printf(\"%d \", arr1[i]);\n    }\n    printf(\"\\n\");\n\n    // Declaring and initializing a 2D array\n    int arr2[2][3] = {{1, 2, 3}, {4, 5, 6}};\n    int j;\n\n    // Printing elements of 2D array\n    printf(\"2D Array elements: \\n\");\n    for (i = 0; i < 2; i++) {\n        for (j = 0; j < 3; j++) {\n            printf(\"%d \", arr2[i][j]);\n        }\n        printf(\"\\n\");\n    }\n\n    // Declaring and initializing a 3D array\n    int arr3[2][3][2] = {{{1, 2}, {3, 4}, {5, 6}}, {{7, 8}, {9, 10}, {11, 12}}};\n    int k;\n\n    // Printing elements of 3D array\n    printf(\"3D Array elements: \\n\");\n    for (i = 0; i < 2; i++) {\n        for (j = 0; j < 3; j++) {\n            for (k = 0; k < 2; k++) {\n                printf(\"%d \", arr3[i][j][k]);\n            }\n            printf(\"\\n\");\n        }\n        printf(\"\\n\");\n    }\n\n    return 0;\n}",
+            "compile": true
+        },
+        {
+            "question": "What is a stack?",
+            "answer": "A stack is a linear data structure that operates on a Last-In-First-Out (LIFO) principle. It means that the last element added to the stack will be the first one to be removed. It allows adding and removing elements only from the top of the stack. The C programming language supports stack implementation through arrays, pointers, and linked lists. A stack can be represented using the following operations:\n\n̐• push: Adds an element to the top of the stack\n• pop: Removes the top element from the stack and returns its value\n• top: Returns the value of the top element of the stack without removing it\n• is_empty: Returns a boolean value indicating whether the stack is empty or not",
+            "code": "#include <stdio.h>\n#include <stdlib.h>\n\n#define MAX_SIZE 100  // Maximum size of the stack\n\n// Structure to define a stack element\nstruct Stack\n{\n    int data;\n    int top;\n};\n\n// Function to create an empty stack\nstruct Stack* createStack()\n{\n    struct Stack* stack = (struct Stack*) malloc(sizeof(struct Stack));\n    stack->top = -1;  // Initially, top of the stack is empty\n    return stack;\n}\n\n// Function to check if the stack is empty\nint isEmpty(struct Stack* stack)\n{\n    return stack->top == -1;  // Returns true if top is -1, i.e., stack is empty\n}\n\n// Function to push an element onto the stack\nvoid push(struct Stack* stack, int item)\n{\n    if (stack->top == MAX_SIZE - 1)  // Check if the stack is full\n    {\n        printf(\"Stack overflow\\n\");\n        return;\n    }\n\n    stack->top++;  // Increment the top index\n    stack->data[stack->top] = item;  // Add the item to the stack\n}\n\n// Function to pop an element from the stack\nint pop(struct Stack* stack)\n{\n    if (isEmpty(stack))  // Check if the stack is empty\n    {\n        printf(\"Stack underflow\\n\");\n        return -1;\n    }\n\n    int item = stack->data[stack->top];  // Get the top element from the stack\n    stack->top--;  // Decrement the top index\n    return item;\n}\n\n// Main function to test the stack implementation\nint main()\n{\n    struct Stack* stack = createStack();  // Create an empty stack\n\n    // Push some elements onto the stack\n    push(stack, 10);\n    push(stack, 20);\n    push(stack, 30);\n\n    // Pop and print the elements from the stack\n    printf(\"%d popped from stack\\n\", pop(stack));\n    printf(\"%d popped from stack\\n\", pop(stack));\n    printf(\"%d popped from stack\\n\", pop(stack));\n\n    return 0;\n}",
+            "compile": true
+        },
+        {
+            "question": "What is a queue?",
+            "answer": "A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle, where elements are inserted at the back and removed from the front. In other words, the element that is inserted first will be removed first.\n\nA queue has two ends: the front and the rear. The front is the end where elements are removed from the queue, and the rear is the end where elements are inserted into the queue.",
+            "code": "#include <stdio.h>\n#define MAX_SIZE 10\n\n// Declare an array to store the elements in the queue\nint queue[MAX_SIZE];\n\n// Declare the front and rear indices for the queue\nint front = -1;\nint rear = -1;\n\n// Function to check if the queue is empty\nint isEmpty() {\n    // Check if both front and rear are -1\n    if (front == -1 && rear == -1) {\n        // Return 1 if the queue is empty\n        return 1;\n    }\n    // Return 0 if the queue is not empty\n    return 0;\n}\n\n// Function to check if the queue is full\nint isFull() {\n    // Check if the rear index is equal to the maximum size of the queue\n    if (rear == MAX_SIZE - 1) {\n        // Return 1 if the queue is full\n        return 1;\n    }\n    // Return 0 if the queue is not full\n    return 0;\n}\n\n// Function to add an element to the queue\nvoid enqueue(int data) {\n    // Check if the queue is full\n    if (isFull()) {\n        // Print an error message and return if the queue is full\n        printf(\"Queue is full\\n\");\n        return;\n    }\n    // Check if the queue is empty\n    if (isEmpty()) {\n        // Initialize the front and rear indices if the queue is empty\n        front = rear = 0;\n    } else {\n        // Increment the rear index if the queue is not empty\n        rear++;\n    }\n    // Add the data element to the queue\n    queue[rear] = data;\n}\n\n// Function to remove an element from the queue\nvoid dequeue() {\n    // Check if the queue is empty\n    if (isEmpty()) {\n        // Print an error message and return if the queue is empty\n        printf(\"Queue is empty\\n\");\n        return;\n    }\n    // Check if there is only one element in the queue\n    if (front == rear) {\n        // Reset the front and rear indices if there is only one element in the queue\n        front = rear = -1;\n    } else {\n        // Increment the front index if there are more elements in the queue\n        front++;\n    }\n}\n\n// Function to display the elements in the queue\nvoid display() {\n    // Check if the queue is empty\n    if (isEmpty()) {\n        // Print an error message and return if the queue is empty\n        printf(\"Queue is empty\\n\");\n        return;\n    }\n    // Print the elements in the queue\n    printf(\"Elements in the queue: \");\n    for (int i = front; i <= rear; i++) {\n        printf(\"%d \", queue[i]);\n    }\n    printf(\"\\n\");\n}\n\nint main() {\n    // Add elements to the queue\n    enqueue(1);\n    enqueue(2);\n    enqueue(3);\n\n    // Display the elements in the queue\n    display();\n\n    // Remove an element from the queue\n    dequeue();\n\n    // Display the elements in the queue after removal\n    display();\n\n    return 0;\n}",
+            "compile": true
+        },
+        {
+            "question": "What is a linked list?",
+            "answer": "Linked lists are dynamic data structures, meaning that their size can change during runtime. They can also be used to implement various data structures, such as stacks, queues, and trees, among others. Linked lists offer various advantages, such as constant-time insertions and deletions, efficient memory usage, and the ability to store elements of any data type.",
+            "code": "#include <stdio.h>\n#include <stdlib.h>\n\n// Define a structure to represent a node in the linked list\nstruct node {\n  int data;           // store the value of the node\n  struct node *next;  // pointer to the next node in the list\n};\n\n// Function to insert a new node at the end of the linked list\nvoid insert_at_end(struct node **head, int value) {\n  // Allocate memory for the new node\n  struct node *new_node = (struct node *)malloc(sizeof(struct node));\n  \n  // Initialize the new node with the given value and set the next pointer to NULL\n  new_node->data = value;\n  new_node->next = NULL;\n\n  // Check if the linked list is empty\n  if (*head == NULL) {\n    // If the linked list is empty, set the new node as the head of the list\n    *head = new_node;\n    return;\n  }\n\n  // Traverse the linked list to find the last node\n  struct node *temp = *head;\n  while (temp->next != NULL)\n    temp = temp->next;\n\n  // Insert the new node at the end of the list by updating the next pointer of the last node\n  temp->next = new_node;\n}\n\n// Function to print the linked list\nvoid print_list(struct node *head) {\n  // Traverse the linked list and print the value of each node\n  struct node *temp = head;\n  while (temp != NULL) {\n    printf(\"%d \", temp->data);\n    temp = temp->next;\n  }\n  printf(\"\\n\");\n}\n\nint main() {\n  // Initialize the head of the linked list to NULL\n  struct node *head = NULL;\n\n  // Insert three nodes at the end of the linked list\n  insert_at_end(&head, 1);\n  insert_at_end(&head, 2);\n  insert_at_end(&head, 3);\n\n  // Print the linked list\n  print_list(head);\n\n  return 0;\n}",
+            "compile": true
+        },
+        {
+            "question": "What is a tree?",
+            "answer": "A tree in C is a hierarchical data structure that consists of nodes with a parent-child relationship. The topmost node is called the root, and the nodes below it are called its children. Each node in a tree can have zero or more child nodes. Trees are used in many applications, such as file systems, network routing, and decision trees.",
+            "code": "",
+            "compile": false
+        },
+        {
+            "question": "What is a binary tree?",
+            "answer": "A binary tree in C is a tree data structure where each node has at most two children. Binary trees are used for searching, sorting, and many other applications. The efficiency of operations on a binary tree depends on the height of the tree, which is the number of edges from the root to the farthest leaf.",
+            "code": "",
+            "compile": false
+        },
+        {
+            "question": "What is a graph?",
+            "answer": "A graph in C is a data structure that consists of nodes and edges that connect the nodes. The nodes represent entities and the edges represent relationships between the entities. Graphs are used in many applications, such as network analysis, recommendation systems, and pathfinding.",
+            "code": "",
+            "compile": false
+        },
+        {
+            "question": "What is a hash table?",
+            "answer": "A hash table in C is a data structure that uses a hash function to map keys to indices in an array. The hash function takes the key as input and returns an index that is used to store the corresponding value in the array. Hash tables are used for efficient lookups and insertions, and are commonly used in implementations of dictionaries and sets.",
+            "code": "",
+            "compile": false
+        },
+        {
+            "question": "What is a dynamic array?",
+            "answer": "A dynamic array in C is an array that can change its size dynamically. It is implemented as a combination of an array and a linked list. The dynamic array starts as an array with a fixed size and can be resized as needed by allocating a new array with a larger size and copying the elements from the old array to the new array.",
+            "code": "",
+            "compile": false
+        },
+        {
+            "question": "What is a doubly linked list?",
+            "answer": "A doubly linked list in C is a linked list where each node contains two references, one to the previous node and one to the next node. This allows for easy traversal in both forward and backward directions. Doubly linked lists are useful in applications where both forward and backward traversal is required.",
+            "code": "",
+            "compile": false
+        },
+        {
+            "question": "What is a binary search tree?",
+            "answer": "A binary search tree in C is a binary tree where each node has a value, and all the values in the left subtree are less than the node value, and all the values in the right subtree are greater than the node value. Binary search trees are used for efficient searching, insertion, and deletion operations.",
+            "code": "",
+            "compile": false
+        },
+        {
+            "question": "What is a heap data structure?",
+            "answer": "A heap data structure in C is a complete binary tree where the value of each node is greater than or equal to its children's values (max heap) or less than or equal to its children's values (min heap). Heaps are used for efficient implementation of priority queues and for efficient sorting algorithms like heapsort.",
+            "code": "",
+            "compile": false
+        }
+    ]
+}

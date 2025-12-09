@@ -1,0 +1,106 @@
+{
+    "data": [
+        {
+            "question": "Program to implement 1D array",
+            "code": "#include <stdio.h>\n#include <conio.h>\nvoid main()\n{ \n\n int arr[5], a; \n clrscr(); \n\n printf (\"Enter 5 numbers for Array.\"); \n\n for (a=0;a<5;a++) \n { \n  scanf (\"%d\", &array[a]); \n } \n printf (\"The elements stored in Array are: \"); \n\n for (a=0;a<=5;a++) \n { \n  printf (\"The elements which is stored at position %d is %d\", a, arr[a]); \n } \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1ZQPyP79oMrXS67AALuC9l-NphLDMHNV1",
+            "compile": false
+        },
+        {
+            "question": "Program to implement 2D array",
+            "code": "#include <stdio.h>\n#include <conio.h>\nvoid main() \n{ \n\n int i, j, array[3][3]; \n clrscr(); \n\n printf (\"Enter 9 elements for matrix of size 3x3 \\n\"); \n\n for(i=1;i<=3;i++) \n  { \n   for (j=1;j<=3;j++) \n    { \n      scanf (\"%d\",& array[i][j]); \n    } \n  } \n printf (\"The array of size 3x3 is \\n\"); \n\n for(i=1;i<=3;i++) \n { \n  for(j=1;j<=3;j++) \n   { \n     printf (\"%d\\t\",array[i][j]); \n     if (j==3) \n     { \n      printf (\"\\n\"); \n     } \n   } \n } \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=16f6Xb_uopvTwSo9UrHja2u12Bl9ZOWl1",
+            "compile": false
+        },
+        {
+            "question": "Program to addition of matrix",
+            "code": "#include <stdio.h>\n#include <conio.h>\nvoid main()\n{ \n\n int i, j, a[3][3], b[3][3], sum[3][3]; \n clrscr(); \n\n printf (\"Enter the elements of array 1.\\n\"); \n\n for (i=1;i<=3;i++) \n  { \n   for (j=1;j<=3;j++) \n   { \n    scanf (\"%d\", &a[i][j]); \n   } \n  } \n\n printf (\"Elements of 1st array are: \\n\"); \n for (i=1;i<=3;i++) \n { \n  for (j=1;j<=3;j++) \n  { \n    printf (\"%d\\t\", a[i][j]); \n  } \n  printf (\"\\n\"); \n } \n\n printf (\"Enter elements of array 2. \\n\"); \n for (i=1;i<=3;i++) \n { \n  for (j=1;j<=3;j++) \n  { \n   scanf (\"%d\", &b[i][j]); \n  } \n } \n\n printf (\"The elements of 2nd array are: \\n\"); \n for (i=1;i<=3;i++) \n { \n  for (j=1;j<=3;j++) \n  { \n   printf (\"%d\\t\",b[i][j]); \n  } \n  printf (\"\\n\"); \n } \n\n printf(\"The sum of both the matrices are: \\n\"); \n for(i=1;i<=3;i++) \n { \n  for (j=1;j<=3;j++) \n  { \n   sum[i][j]=a[i][j]+b[i][j]; \n   printf(\"%d\\t\", sum[i][j]); \n  } \n  printf (\"\\n\"); \n } \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1KB1-6uIdYLWZKjgAh5bisTVCCnu8BT66",
+            "compile": false
+        },
+        {
+            "question": "Program to implement matrix multiplication",
+            "code": "#include <stdio.h>\n#include <conio.h>\nvoid main()\n{ \n\n int i, j, a[3][3], b[3][3], sum[3][3]; \n clrscr(); \n\n printf(\"Enter the elements of 1st array .\\n\"); \n for(i=1;i<=3;i++) \n { \n  for(j=1;j<=3;j++) \n  { \n   scanf (\"%d\", &a[i][j]); \n  } \n } \n\n printf(\"Elements of 1st array are: \\n\"); \n for(i=1;i<=3;i++) \n { \n  for (j=1;j<=3;j++) \n  { \n   printf(\"%d\\t\", a[i][j]); \n  } \n  printf(\"\\n\"); \n } \n\n printf(\"Enter the elements of 2nd array .\\n\"); \n for(i=1;i<=3;i++) \n { \n  for(j=1;j<=3;j++) \n  { \n   scanf(\"%d\", &b[i][j]); \n  } \n } \n\n printf (\"Elements of 2nd array are: \\n\"); \n for (i=1;i<=3;i++) \n { \n  for (j=1;j<=3;j++) \n  { \n   printf (\"%d\\t\", b[i][j]); \n  } \n  printf (\"\\n\"); \n } \n\n printf (\"The multiplication of both the matrices are: \\n\"); \n\n for (i=1;i<=3;i++) \n { \n  for (j=1;j<=3;j++) \n  { \n   sum[i][j]=a[i][j]*b[i][j]; \n   printf (\"%d\\t\", sum[i][j]); \n  } \n  printf(\"\\n\"); \n } \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=17M6MlSMQ5i53Y5fNgKbpG-tVVznl_WPq",
+            "compile": false
+        },
+        {
+            "question": "Program to generate lower triangular matrix",
+            "code": "#include <stdio.h>\n#include <conio.h>\nvoid main()\n{ \n int a, b, array[3][3]; \n clrscr(); \n printf (\"Enter array elements: \\n\"); \n\n for (a=1;a<=3;a++) \n { \n  for (b=1;b<=3;b++) \n  { \n   scanf (\"%d\", &array[a][b]); \n  } \n } \n\n printf (\"Matrix is: \\n\"); \n for (a=1;a<=3;a++) \n { \n  for (b=1;b<=3;b++) \n  { \n   printf (\"%d\\t\", array[a][b]); \n  } \n  printf (\"\\n\"); \n } \n\n printf (\"Lower Triangular matrix is: \\n\"); \n for (a=1;a<=3;a++) \n { \n  for (b=1;b<=3;b++) \n  { \n   if (a>=b) \n   { \n    printf (\"%d\\t\", array[a][b]); \n   } \n   else \n    printf (\"%d\\t\", 0); \n  } \n  printf (\"\\n\"); \n } \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1YHLsya0omG5aIG_-2_5cE0GDQU1cQC13",
+            "compile": false
+        },
+        {
+            "question": "Program to generate upper triangular matrix",
+            "code": "#include <stdio.h>\n#include <conio.h>\nvoid main()\n{ \n int a, b, array[3][3]; \n clrscr(); \n\n printf (\"Enter array elements: \\n\"); \n for (a=1;a<=3;a++) \n { \n  for (b=1;b<=3;b++) \n  { \n   scanf (\"%d\", &array[a][b]); \n  } \n } \n\n printf (\"Matrix is: \\n\"); \n for (a=1;a<=3;a++) \n { \n  for (b=1;b<=3;b++) \n  { \n   printf (\"%d\\t\", array[a][b]); \n  } \n  printf (\"\\n\"); \n } \n\n printf (\"Upper Triangular matrix is: \\n\"); \n for (a=1;a<=3;a++) \n { \n  for (b=1;b<=3;b++) \n  { \n   if (a<=b) \n    printf (\"%d\\t\", array[a][b]); \n  else \n   printf (\"%d\\t\", 0); \n  } \n  printf (\"\\n\"); \n } \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1aHqC_8iwscB3tinPh3uMAWFRirJ93aiv",
+            "compile": false
+        },
+        {
+            "question": "Program to calculate factorial of any number recursion",
+            "code": "#include <stdio.h>\n#include <conio.h>\nlong int number(int a);\nint main()\n{ \n int a; \n clrscr(); \n\n printf (\"Enter a positive number to find it's factorial: \\n\"); \n scanf (\"%d\", &a); \n\n printf (\"Factorial of %d is %d\", a, number(a)); \n\n getch(); \n return 0; \n} \n\n long int number(int a) \n\n{ \n if (a>=1) \n return a*number(a-1); \n\n else \n return 1; \n}",
+            "url": "https://drive.google.com/uc?id=14sR-CTyCmusAdL8feNgzTb7EDGx2RquJ",
+            "compile": false
+        },
+        {
+            "question": "Program to print fibonacci series using recursion",
+            "code": "#include <stdio.h>\n#include <conio.h> \nint fibonacci (int a); \nint main() \n{ \n int a, counter; \n clrscr(); \n\n printf (\"Enter number of terms in Fibonacci Series: \\n\"); \n scanf (\"%d\", &a); \n\n printf (\"Fibonacci series till %d is \\n\", a); \n for (counter=0;counter<a;counter++) \n { \n  printf (\"%d\\t\", fibonacci (counter)); \n } \n\n getch(); \n return 0; \n} \n\n int fibonacci (int a) \n\n{ \n if (a<2) \n return a; \n return fibonacci(a-1)+(a-2); \n}",
+            "url": "https://drive.google.com/uc?id=1cGKctvGtynhUx0FNUhrzxChwVqltkEHx",
+            "compile": false
+        },
+        {
+            "question": "Program to implement stack",
+            "code": "#include <stdio.h> \n#include <conio.h> \n# define MAX 10 \nint STK [MAX], TOP = -1; \nvoid PUSH(); \nvoid POP(); \nvoid DISPLAY(); \nvoid main() \n{ \n int num; \n while (1) \n { \n  printf (\"\\n_____MENU_____\"); \n  printf (\"\\n1. PUSH\"); \n  printf (\"\\n2. POP\"); \n  printf (\"\\n3. DISPLAY\"); \n  printf (\"\\n4. EXIT\"); \n\n  printf (\"\\nEnter your choice: \"); \n  scanf (\"\\n%d\", &num); \n\n  switch (num) \n  { \n   case 1: PUSH(); \n   break; \n\n   case 2: POP(); \n   break; \n\n   case 3: DISPLAY(); \n   break; \n\n   case 4: exit(0); \n   break; \n\n   default: \n   printf (\"\\nWrong Choice\"); \n  } \n } \n} \n\nvoid PUSH() \n{ \n int data; \n\n if (TOP==MAX-1) \n { \n  printf (\"\\nStack is Overflow.\"); \n  return ; \n } \n printf (\"\\nEnter data to be pushed: \"); \n scanf (\"\\n%d\", &data); \n TOP = TOP+1; \n STK[TOP]=data; \n printf (\"\\n%d is pushed\", data); \n} \n\nvoid POP() \n{ \n int data; \n\n if (TOP==-1) \n { \n  printf (\"\\nStack is Underflow.\"); \n  return ; \n } \n\n data = STK[TOP]; \n TOP=TOP-1; \n printf (\"\\n%d is popped\", data); \n} \n\nvoid DISPLAY() \n{ \n int i; \n\n printf (\"\\nStack is: \\n\"); \n for (i=TOP; i>=0; i- -) \n { \n  printf (\"%d\\t\", STK[i]); \n } \n}",
+            "url": "https://drive.google.com/uc?id=1x_ORH4f-UVRwTv82D0nxvbduPZcDAWiR",
+            "compile": false
+        },
+        {
+            "question": "Program to implement linear queue",
+            "code": "#include <stdio.h> \n#include <conio.h> \n# define MAX 10 \nint QUE [MAX], FRONT= -1, REAR= -1; \nvoid QINSERT(); \nvoid QDELETE(); \nvoid QDISPLAY(); \nvoid main() \n{ \n int num; \n clrscr(); \n while (1) \n { \n  printf (\"\\n_____MENU_____\"); \n  printf (\"\\n1. INSERT\"); \n  printf (\"\\n2. DELETE\"); \n  printf (\"\\n3. DISPLAY\"); \n  printf (\"\\n4. EXIT\"); \n\n  printf (\"\\nEnter your choice: \"); \n  scanf (\"\\n%d\", &num); \n\n  switch (num) \n  { \n   case 1: QINSERT(); \n   break; \n   case 2: QDELETE(); \n   break; \n   case 3: QDISPLAY(); \n   break; \n   case 4: exit(0); \n   break; \n   default: \n   printf (\"\\nWrong Choice.\"); \n  } \n } \n} \n\nvoid QINSERT() \n{ \n int data; \n\n printf (\"\\nEnter data to be inserted: \"); \n scanf (\"\\n%d\", &data); \n\n if (REAR==MAX-1) \n { \n  printf (\"\\nQueue is Overflowing.\"); \n  return ; \n } \n if (FRONT==-1) \n { \n  FRONT=FRONT+1; \n  REAR=REAR+1; \n } \n else \n { \n  REAR=REAR+1; \n  QUE[REAR]=data; \n  printf (\"\\n%d is inserted\", data); \n } \n} \n\nvoid QDELETE() \n{ \n int data; \n if (FRONT == -1) \n { \n  printf (\"\nQueue is Underflowing.\"); \n  return ; \n } \n data=QUE[FRONT]; \n if (FRONT==REAR) \n { \n  FRONT= -1; \n  REAR= -1; \n } \n else \n { \n  FRONT= FRONT + 1; \n  printf (\"\\n%d is deleted\", data); \n } \n} \nvoid QDISPLAY() \n{ \n int i; \n\n printf (\"\\nElements of Queue are \\n\"); \n for (i=FRONT;i<=REAR;i++) \n { \n  printf (\"%d\\t\", QUE[i]); \n } \n}",
+            "url": "https://drive.google.com/uc?id=1v0bycobF_0E8U1gMwXsltQrBkI5bMSI7",
+            "compile": false
+        },
+        {
+            "question": "Program to implement linear search",
+            "code": "#include <stdio.h> \n#include<conio.h> \nvoid main() \n{ \n int a[10], b, c, search; \n clrscr(); \n\n printf (\"Enter number of element: \"); \n scanf (\"%d\", &b); \n\n printf (\"Enter %d intergers: \", b); \n for (c=0;c<b;c++) \n scanf (\"%d\", &a[c]); \n\n printf (\"Enter the number to search: \"); \n scanf (\"%d\", &search); \n\n for (c=0;c<b;c++) \n { \n  if (a[c]==search) \n  { \n   printf (\"%d is present at location %d\", search, c+1); \n   break; \n  } \n  if (c==b) \n  { \n   printf (\"%d is not present in array\", search); \n  } \n } \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1Hch0g0qlav-0o12YhxFJ-RDwmZh3j6Cd",
+            "compile": false
+        },
+        {
+            "question": "Program to create a menu driven program",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int a, b, x, sum, sub, mult, div; \n clrscr(); \n\n printf (\"_________MENU_________\"); \n printf (\"\\n Enter 1 for Addition\\n Enter 2 for Subtraction\\n Enter 3 for Multiplication\\n Enter 4 for Division\"); \n printf (\"\\nEnter your choice: \"); \n scanf (\"%d\", &x); \n switch(x) \n { \n  case 1: \n  printf (\"\\nEnter two numbers for addition: \"); \n  scanf (\"%d%d\", &a, &b); \n  sum = a + b; \n  printf (\"\\nThe sum of %d and %d is %d\", a, b, sum); \n  break; \n\n  case 2: \n  printf (\"\\nEnter two numbers for subtraction: \"); \n  scanf (\"%d%d\", &a, &b); \n  sub = a - b; \n  printf (\"\\nThe subtraction of %d and %d is %d\", a, b, sub); \n  break; \n\n\n  case 3: \n  printf (\"\\nEnter two numbers for multiplication: \"); \n  scanf (\"%d%d\", &a, &b); \n  mult = a * b; \n  printf (\"\\nThe multiplication of %d and %d is %d\", a, b, mult); \n  break; \n\n  case 4: \n  printf (\"\\nEnter two numbers for division: \"); \n  scanf (\"%d%d\", &a, &b); \n  div = a / b; \n  printf (\"\\nThe division of %d and %d is %d\", a, b, div); \n  break; \n\n  default: \n  printf (\"\\nWrong Choice!\"); \n } \n  getch(); \n}",
+            "url": "https://drive.google.com/uc?id=19QC9mWR2A4FSNdIXFHkFinCApPIRoU3a",
+            "compile": false
+        },
+        {
+            "question": "Program to implement single pointer",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int i=5, *x; \n float j=2.5, *y; \n char k='h', *z; \n\n x= &i; \n y= &j; \n z= &k; \n\n printf (\"Value of i = %d\", i); \n printf (\"\\nValue of j = %f\", j); \n printf (\"\\nValue of k = %c\", k); \n\n printf (\"\\nValue of i using x = %d\", *x); \n printf (\"\\nValue of j using y = %f\", *y); \n printf (\"\\nValue of k using z = %c\", *z); \n\n printf (\"\\nAddress inside x = %u\", x); \n printf (\"\\nAddress inside y = %u\", y); \n printf (\"\\nAddress inside z = %u\", z); \n\n x++; \n y++; \n z++; \n\n printf (\"\\nAddress inside x = %u\", x); \n printf (\"\\nAddress inside y = %u\", y); \n printf (\"\\nAddress inside z = %u\", z); \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=13eUc7J2tPr57dEzQ14eyzRiJsKzjce7p",
+            "compile": false
+        },
+        {
+            "question": "Program to implement double pointer",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int a= 5; \n int *ptr1; \n int **ptr2; // Double Pointer \n clrscr(); \n\n ptr1 = &a; // Storing address of 'a' to 'ptr1' \n ptr2 = &ptr1; // Storing address of 'ptr1' to 'ptr2' \n\n printf(\"Value of using ptr1 = %d\", *ptr1); // Displaying value using single pointer \n printf(\"\\nValue of using ptr2 = %d\", **ptr2); // Displaying value using double pointer \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1re-zt51tHAf8Ej4dtDFyCSp0vXSbrwtY",
+            "compile": false
+        },
+        {
+            "question": "Program to implement multiple pointers",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int a= 5; \n int *c; \n int **cp; \n int ***cpp; \n clrscr(); \n\n c = &a; \n cp = &c; \n cpp = &cp; \n\n printf (\"Value of a = %d\", *c); \n printf (\"\\nAddress inside c = %u\", c); \n printf (\"\\nAddress inside cp = %u\", cp); \n printf (\"\\nAddress inside cpp = %u\", cpp); \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1E3D-Rd7vuJPcqIqhJdH6A0sYSVBnbKVJ",
+            "compile": false
+        },
+        {
+            "question": "Program to implement circular queue",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <stdlib.h> \n#define MAX 5 \nvoid insertq (); \nvoid deleteq (); \nvoid display (); \nint queue[MAX], front = -1, rear = -1; \nvoid main() \n{ \n int ch; \n clrscr(); \n while(1) \n { \n  printf (\"\\n*****MENU*****\\n\"); \n  printf (\"1. Insert\\n\"); \n  printf (\"2. Deletion\\n\"); \n  printf (\"3. Display\\n\"); \n  printf (\"4. Exit\\n\"); \n  printf (\"Enter your choice: \"); \n  scanf(\"%d\", &ch); \n\n  switch (ch) \n  { \n   case 1: insertq (); \n   break; \n\n   case 2: deleteq (); \n   break; \n\n   case 3: display (); \n   break; \n\n   case 4: exit (0); \n   break; \n\n   default: \n   printf (\"Wrong Choice.\\n\"); \n  } \n } \n} \n\nvoid insertq () \n{ \n int data; \n\n printf (\"Enter the element: \"); \n scanf(\"%d\", &data); \n\n if (( front==0 && rear == MAX-1) || (front == rear+1 )) \n { \n\n  printf (\"Queue is full.\"); \n  return; \n } \n\n else if (rear == -1) \n { \n  rear++; \n  front++; \n } \n\n else if ( rear == MAX-1 && front > 0 ) \n { \n  rear = 0; \n } \n\n else \n { \n\n rear++; \n queue[rear]=data; \n } \n} \n\nvoid deleteq () \n{ \n if (front == -1) \n { \n  printf (\"Queue is empty.\\n\"); \n } \n else if (front == rear) \n { \n  printf (\"%d is deleted.\\n\", queue[front]); \n  front = -1; \n  rear = -1; \n } \n\n else \n { \n  printf (\"%d deleted\\n\", queue[front]); \n  front ++; \n } \n} \n\nvoid display() \n{ \n int i; \n\n if (front>rear) \n { \n  for (i=front; i<MAX; i++) \n  { \n   printf (\"%d\\t\", queue[i]); \n  } \n\n  for (i=0; i<=rear; i++) \n  { \n   printf (\"%d\\t\", queue[i]); \n  } \n } \n\n else \n { \n  for (i=front; i<=rear; i++) \n  { \n   printf (\"%d\\t\", queue[i]); \n  } \n } \n}",
+            "url": "https://drive.google.com/uc?id=14SsQEgMnJrhL3WRlUx2t18t10AqZNT0L",
+            "compile": false
+        },
+        {
+            "question": "Program to implement merge sort",
+            "code": "#include <stdio.h> \n#include <conio.h> \nint a[50]; \nvoid merge ( int, int, int ); \nvoid merge_sort ( int, int ); \nvoid main() \n{ \n int num,i; \n clrscr(); \n\n printf (\"Enter number of elements in array: \\n\"); \n scanf (\"%d\", &num); \n\n printf (\"Enter the elements: \\n\"); \n\n for ( i=0; i<num; i++) \n { \n  scanf (\"%d\", &a[i]); \n } \n merge_sort ( 0, num-1 ); \n\n printf (\"Sorted array: \\n\"); \n for ( i=0; i<num; i++) \n { \n  printf (\"%d \\t\", a[i]); \n } \n getch(); \n} \n\nvoid merge_sort ( int low, int high ) \n{ \n int mid; \n\n if( low < high ) \n { \n  mid = ( low + high ) / 2; \n  merge_sort ( low, mid ); \n  merge_sort ( mid+1, high ); \n  merge ( low, mid, high ); \n } \n} \n\nvoid merge ( int low, int mid, int high ) \n{ \n int h, i, j, b[50], k; \n\n h = low; \n i = low; \n j = mid + 1; \n\n while (( h<=mid ) && ( j<=high )) \n { \n  if ( a[h] <= a[j] ) \n  { \n   b[i] = a[h]; \n   h++; \n  } \n\n  else \n  { \n   b[i] = a[j]; \n   j++; \n  } \n  i++; \n } \n\n if ( h > mid ) \n { \n  for ( k=j; k<=high; k++ ) \n  { \n   b[i] = a[k]; \n   i++; \n  } \n } \n\n else \n { \n  for ( k=h; k<=mid; k++ ) \n  { \n   b[i] = a[k]; \n   i++; \n  } \n } \n\n for( k= low; k<= high; k++ ) \n { \n  a[k] = b[k]; \n } \n}",
+            "url": "https://drive.google.com/uc?id=13PTF1p2_Zi0EuucQQuIJYZSQgP59Xp97",
+            "compile": false
+        }
+    ]
+}

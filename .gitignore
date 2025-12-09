@@ -47,7 +47,7 @@ local.properties
 
 # Keystores (prevent sensitive signing files)
 *.keystore
-# *.jks
+*.jks
 !debug.keystore
 
 # Android App Artifacts (prevent production bundles)

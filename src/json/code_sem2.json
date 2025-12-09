@@ -1,0 +1,166 @@
+{
+    "data": [
+        {
+            "question": "Program to access and print an array of 5 elements",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int num[5], a; \n clrscr(); \n\n printf (\"Enter the elements: \\n\"); \n for ( a=0;a<5;a++ ) \n { \n  scanf (\"%d\", &num[a]); \n } \n  printf (\"The elements are: \\n\"); \n for (a=0;a<5;a++) \n { \n  printf (\"%d\\t\", numb[a]); \n } \n  getch(); \n}\n",
+            "url": "https://drive.google.com/uc?id=1mB-u25TWZwTIUZ_jtu0fkYp6IYpyNpg4",
+            "compile": false
+        },
+        {
+            "question": "Program to find the largest and smallest element of 1D array",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int arr[10], i, max, min, a; \n clrscr(); \n\n printf (\"Enter the number of the elements of an array: \"); \n scanf (\"%d\", &a); \n\n printf (\"Enter %d elements of the array: \", a); \n for ( i=0; i<a; i++ ) \n { \n  scanf (\"%d\", &arr[i]); \n } \n\n max = arr[0]; \n min = arr[0]; \n\n for ( i=1; i<a; i++ ) \n { \n  if ( arr[i]>max ) \n  { \n   max = arr[i]; \n  } \n\n if ( arr[i]<min ) \n  { \n  min = arr[i]; \n  } \n } \n\n printf (\"Largest element is %d\\n\", max); \n printf (\"Smallest element is %d\", min); \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1Z_g0UPF1FSXqW3kZ6lQS_Xwr9jgj5oLW",
+            "compile": false
+        },
+        {
+            "question": "Program to input two matrices and store their product in another third array",
+            "code": "#include<stdio.h> \n#include<conio.h> \nvoid main() \n{ \n int i, j, k, a[3][3], b[3][3], c[3][3]; \n clrscr(); \n\n printf (\"Enter the elements of 1st array .\\n\"); \n for (i=1;i<=3;i++) \n { \n  for (j=1;j<=3;j++) \n  { \n   scanf (\"%d\", &a[i][j]); \n  } \n } \n\n printf (\"Elements of 1st array are: \\n\"); \n for (i=1;i<=3;i++) \n { \n  for (j=1;j<=3;j++) \n  { \n   printf (\"%d\\t\", a[i][j]); \n  } \n  printf (\"\\n\"); \n } \n\n printf (\"Enter the elements of 2nd array .\\n\"); \n for (i=1;i<=3;i++) \n { \n  for (j=1;j<=3;j++) \n  { \n   scanf (\"%d\", &b[i][j]); \n } \n } \n\n printf (\"Elements of 2nd array are: \\n\"); \n for (i=1;i<=3;i++) \n { \n  for (j=1;j<=3;j++) \n  { \n   printf (\"%d\\t\", b[i][j]); \n  } \n  printf (\"\\n\"); \n } \n\n printf (\"The product of both the matrices are: \\n\"); \n for (i=1;i<=3;i++) \n { \n  for (j=1;j<=3;j++) \n  { \n   c[i][j]=0; \n   for (k=1; k<=3;k++) \n   { \n    c[i][j] += a[i][k] * b[k][j]; \n   } \n  } \n } \n\n for(i=1;i>=3;i++) \n { \n  for(j=1;j<=3;j++) \n  { \n   printf(\"%d\\t\", c[i][j]); \n  } \n  printf(\"\\n\"); \n } \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=191X56-zM_rlzwyKAdVPnJbHxbH-ouNAK",
+            "compile": false
+        },
+        {
+            "question": "Program to print the sum of each row and each column of a matrix separately",
+            "code": "#include <stdio.h> \n#include <conio.h> \n# define SIZE 3 \nvoid main() \n{ \n int A[SIZE][SIZE]; \n int row, col, sum = 0; \n  /* Input elements in matrix from user */ \n printf (\"Enter elements in matrix of size %dx%d: \\n\", SIZE, SIZE); \n for (row=0; row<SIZE; row++) \n { \n  for (col=0; col<SIZE; col++) \n  { \n   scanf (\"%d\", &A[row][col]); \n  } \n } \n\n /* Calculate sum of elements of each row of matrix */ \n for (row=0; row<SIZE; row++) \n { \n  sum = 0; \n  for (col=0; col<SIZE; col++) \n  { \n   sum += A[row][col]; \n  } \n\n  printf (\"Sum of elements of Row %d = %d\\n\", row+1, sum); \n } \n\n /* Find sum of elements of each columns of matrix */ \n for (row=0; row<SIZE; row++) \n { \n  sum = 0; \n  for (col=0; col<SIZE; col++) \n  { \n   sum += A[col][row]; \n  } \n  printf (\"Sum of elements of Column %d = %d\\n\", row+1, sum); \n } \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1b2tjEzuyhjzU1NwiPIl_OjfnYKQKncnE",
+            "compile": false
+        },
+        {
+            "question": "Program to declare a user defined array and print the sum of odd and even numbers",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int a[10], i, sume=0, sumo= 0, n; \n clrscr(); \n\n printf (\"Enter the size of an array: \"); \n scanf (\"%d\", &n); \n\n if (n<=10) \n { \n  printf (\"Enter the array data: \"); \n  for (i=0;i<n;i++) \n  { \n   scanf (\"%d\", &a[i]); \n  } \n  for (i=0;i<n;i++) \n  { \n   if (a[i]%2==0) \n   sume = sume + a[i]; \n   else \n   sumo = sumo + a[i]; \n  } \n\n  printf (\"Sum of odd number = %d and sum of even number = %d\", sumo, sume); \n } \n else \n\n printf (\"\\nSize is too large.\"); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1dMBLmn-2xr3F6Z2T8JPuBAmBqAa5j22j",
+            "compile": false
+        },
+        {
+            "question": "Program to insert a user-defined element at specific location",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int A[10], i, num, pos, n; \n clrscr(); \n\n printf (\"Enter the number of elements: \"); \n scanf (\"%d\", &n); \n\n printf (\"Enter the data: \"); \n for ( i=0; i<n; i++) \n { \n  scanf (\"%d\", &A[i]); \n } \n\n printf (\"Enter the new element value and it's position: \"); \n scanf (\"%d%d\", &num, &pos); \n\n for ( i=n; i>pos; i- -) \n { \n  A[i+1]=A[i]; \n } \n\n A[pos]=num; \n printf (\"New array is: \\n\"); \n\n for (i=0;i<n+1;i++) \n { \n  printf (\"%d\\t\", A[i]); \n } \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1DNEmeA1Q3kPetcfHx9wUI-O0is5E61Oc",
+            "compile": false
+        },
+        {
+            "question": "Program to arrange the elements of an array using bubble sort",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int A[10], i, j, n, temp; \n clrscr(); \n\n printf (\"Enter the number of elements: \"); \n scanf (\"%d\", &n); \n\n printf (\"Enter the data: \"); \n for ( i=0; i<n; i++ ) \n { \n  scanf (\"%d\", &A[i]); \n } \n\n for ( i=0; i<n; i++ ) \n { \n  for ( j=0; j<n-i; j++ ) \n  { \n   if ( A[j] > A[j+1]) \n   { \n    temp = A[j]; \n    A[j] = A[j+1]; \n    A[j+1]=temp; \n   } \n  } \n } \n\n printf (\"Sorted Array is \"); //Sorted in Ascending Order \n for ( i=0; i<n; i++ ) \n { \n  printf (\"%d\\t\", A[i]); \n } \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=14SkCs42TvLUBmM-lbIaLVsunRDeQjPBV",
+            "compile": false
+        },
+        {
+            "question": "Program to find the length of the string entered by user",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int i= 0; \n char ch, str[20]; \n clrscr(); \n\n printf (\"Enter the string: \"); \n gets(str); \n ch=str[0]; \n while (ch!='0') \n { \n  i++; \n  ch= str[i]; \n } \n\n printf (\"Length is %d\", i); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1qKwhcAIGlTbGSwbu271H_G_7o0Zi2bZp",
+            "compile": false
+        },
+        {
+            "question": "Program to find the length of the string entered by user using string library function",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <string.h> \nvoid main() \n{ \n int i= 0; \n char ch, str[20]; \n clrscr(); \n\n printf (\"Enter the string: \"); \n gets(str); \n\n i = strlen (str); \n\n printf (\"Length is %d\", i); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1S31CY8h5R6iRE3nhNPVkRANHCC89x2HO",
+            "compile": false
+        },
+        {
+            "question": "Program to copy content of one sring to another string",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n char A[20], B[20]; \n int i, j; \n clrscr(); \n\n printf (\"Enter the string: \"); \n gets (A); \n\n j = strlen (A); \n\n for (i=0; i<j; i++) \n { \n  B[i] = A[i]; \n } \n\n printf (\"Copy String = %s\", B); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1yyVsQOit04oWptSSLRiFJM2Eej4TTWmg",
+            "compile": false
+        },
+        {
+            "question": "Program to copy content of one sring to another string using string library function",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <string.h> \nvoid main() \n{ \n char A[20], B[20]; \n int i, j; \n clrscr(); \n\n printf (\"Enter the string: \"); \n gets (A); \n\n strcpy(B, A); \n\n printf (\"Copy String = %s\", B); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1ujmqiornW8O796-kjnqY032MLN86lfsC",
+            "compile": false
+        },
+        {
+            "question": "Program to copy string up-to predefined number only",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <string.h> \nvoid main() \n{ \n char A[20], B[20]; \n int i, j; \n clrscr(); \n\n printf (\"Enter the string: \"); \n gets (A); \n\n printf (\"Enter the number of elements to be copied: \"); \n scanf (\"%d\", &j); \n\n strncpy (B, A, j); \n printf (\"Copy String = %s\", B); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1XSpzlW417gFbSxuEQN1haRn7QQJqWDhH",
+            "compile": false
+        },
+        {
+            "question": "Program to copy string up-to predefined number only using string library function",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n char A[20], B[20]; \n int i, j; \n clrscr(); \n\n printf (\"Enter the string: \"); \n gets (A); \n\n printf (\"Enter the number of elements to be copied: \"); \n scanf (%d, &j); \n for ( i=0; i<j; i++) \n { \n  B[i] = A[i]; \n } \n\n printf (\"Copy String = %s\", B); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1pDCiKXjK5do9vwXQTIHjKjM6rCcouXgv",
+            "compile": false
+        },
+        {
+            "question": "Program to find the address of any variable with it's value using pointer only",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int a= 10, c; \n int *pt= &a; \n clrscr(); \n c = *pt; \n\n printf (\"Address = %x \\n\", pt); \n printf (\"Value = %d\", c); \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1WQb8Yj4PAkmknHlBMOhpd4Mx_QnPfQMQ",
+            "compile": false
+        },
+        {
+            "question": "Program to subtract two pointer variables",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int a, b, r; \n int *p1, *p2; \n clrscr(); \n\n printf (\"Enter two numbers: \"); \n scanf (\"%d%d\", &a, &b); \n\n p1 = &a; \n p2 = &b; \n\n printf (\"The value of p1 is %u and p2 is %u.\\n\", p1, p2); \n\n r = p1 - p2; \n printf (\"The value after subtraction is %d\\n\", r); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1D_dfb7GA9fakpnexUZFr1xEODjjOtCX8",
+            "compile": false
+        },
+        {
+            "question": "Program to search an element using linear search",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int A[10], i, n, num; \n clrscr(); \n\n printf (\"Enter the number of elements: \"); \n scanf (\"%d\", &n); \n\n if ( n<=10 ) \n { \n  printf (\"Enter the data: \"); \n  for (i=0; i<n; i++) \n  { \n   scanf (\"%d\", &A[i]); \n  } \n  printf (\"Enter the data to be searched: \"); \n  scanf (\"%d\", &num); \n\n  for ( i=0; i<n; i++) \n  { \n   if (num == A[i]) \n   { \n    printf (\"Number is found at %d position\", i+1); \n    break; \n   } \n  } \n } \n else \n  printf (\"Dimensions are not satisfied.\"); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=19I7UrsVR6ZmBnHDErC3gqiGGrMVdmOzx",
+            "compile": false
+        },
+        {
+            "question": "Program to find the sum of elements of an array",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int a, sum= 0, arr[5]; \n clrscr(); \n\n printf (\"Enter 5 elements to find sum: \\n\"); \n\n for ( a=0; a<5; a++) \n { \n  scanf (\"%d\", &arr[a]); \n  sum += arr[a]; \n } \n\n printf (\"The sum of array is: %d\", sum); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1_Eey4jpGEyqMPmZhqGcvsWi3qODcXt0R",
+            "compile": false
+        },
+        {
+            "question": "Program to print position of the smallest element using array",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int a, b, arr[50], pos, small; \n clrscr(); \n\n printf (\"Enter the number of elements: \"); \n scanf (\"%d\", &a); \n\n printf (\"Enter the elements: \"); \n for ( b=0; b<a; b++) \n { \n  scanf (\"%d\", &arr[b]); \n } \n\n small = arr[0]; \n pos = 0; \n for ( b=1; b<a; b++ ) \n { \n  if ( arr[b] < small ) \n  { \n   small = arr[b]; \n   pos = b; \n  } \n } \n\n printf (\"The smallest element is %d and it's position is %d\", small, pos+1); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1SdTK30O6FhMYWj7rxEhbOMC9i3CThsBh",
+            "compile": false
+        },
+        {
+            "question": "Program to delete an element from a specific location",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int a, b, arr[50], pos; \n clrscr(); \n\n printf (\"Enter the number of elements: \"); \n scanf (\"%d\", &a); \n\n printf (\"Enter the elements: \"); \n for ( b=0; b<a; b++) \n { \n  scanf (\"%d\", &arr[b]); \n } \n\n printf (\"Enter the position of the element to be deleted: \"); \n scanf(\"%d\", &pos); \n\n for ( b=pos; b<a-1; b++) \n { \n  arr[b] = arr[b+1]; \n } \n a- -; \n\n printf (\"The array after deletion is: \"); \n for ( b=0; b<a; b++) \n { \n  printf (\"\\nArr[%d] = %d\", b, arr[b]); \n } \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1JYz-ntAemOkruBlU3IjzAavFbmCjRczZ",
+            "compile": false
+        },
+        {
+            "question": "Program to find the length of a string",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <string.h> \nvoid main() \n{ \n char a= 0, length, str[50]; \n clrscr(); \n\n printf (\"Enter the string: \"); \n gets (str); \n\n while (str[a] != '\\0') \n { \n  a++; \n } \n length = a; \n\n printf (\"The length of the string is: %d\", length); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=11ruHgjuAy9mQbrCxisBskvgshptgTAxx",
+            "compile": false
+        },
+        {
+            "question": "Program to print the elements of 2D array",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int a, b, arr[2][2] = { 5, 6, 7, 8 }; \n clrscr(); \n\n printf (\"The elements are: \"); \n for ( a=0; a<2; a++) \n { \n\n  printf (\"\\n\"); \n  for ( b=0; b<2; b++) \n  { \n   printf (\"%d\\t\", arr[a][b]); \n  } \n } \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1U-gxVMTywdRwNt-hmpgibc5Mcc2dPT7u",
+            "compile": false
+        },
+        {
+            "question": "Program to find the greatest element from a matric and print its position",
+            "code": "#include<stdio.h> \n#include<conio.h> \nvoid main() \n{ \n int a[3][3], i, j, row=0, col=0, max; \n clrscr(); \n\n printf(\"Enter the elements: \\n\"); \n for(i=0; i<3; i++) \n { \n  for(j=0; j<3; j++) \n  { \n   scanf(\"%d\", &a[i][j]); \n  } \n } \n\n printf(\"The matrix is: \\n\"); \n for(i=0; i<3; i++) \n { \n  for(j=0; j<3; j++) \n  { \n   printf(\"%d\\t\", a[i][j]); \n  } \n  printf(\"\\n\"); \n } \n\n max = a[0][0]; \n for(i=0; i<3; i++) \n { \n  for(j=0; j<3; j++) \n  { \n   if(a[i][j]>max) \n   { \n    max = a[i][j]; \n    row = i; \n    tcol = j; \n   } \n  } \n } \n printf(\"The greatest element of matrix is %d and its position is a[%d][%d]\", max, row, col); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1y-dK0-Hk1I71L4e24CKEedHLJHBevYoL",
+            "compile": false
+        },
+        {
+            "question": "Program to find the transpose of a matrix",
+            "code": "#include<stdio.h> \n#include<conio.h> \nvoid main() \n{ \n int a[3][3], b[3][3], i, j; \n clrscr(); \n\n printf(\"Enter the elements: \\n\"); \n for(i=0; i<3; i++) \n { \n  for(j=0; j<3; j++) \n  { \n   scanf(\"%d\", &a[i][j]); \n  } \n } \n\n printf(\"The matrix is: \\n\"); \n for(i=0; i<3; i++) \n { \n  for(j=0; j<3; j++) \n  { \n   printf(\"%d\\t\", a[i][j]); \n  } \n  printf(\"\\n\"); \n } \n\n // Applying the conditions to transpose \n for(i=0; i<3; i++) \n { \n  for(j=0; j<3; j++) \n  { \n   b[i][j] = a[j][i]; \n  } \n } \n\n printf(\"The transpose of the matrix is: \\n\"); \n for(i=0; i<3; i++) \n { \n  for(j=0; j<3; j++) \n  { \n   printf(\"%d\\t\", b[i][j]); \n  } \n  printf(\"\\n\"); \n } \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1W83BePgUUHccX2ubrCcby4HfCsP0DSQ8",
+            "compile": false
+        },
+        {
+            "question": "Program to swap two numbers using call by reference",
+            "code": "#include<stdio.h> \n#include<conio.h> \nvoid swap(int *a, int *b); \n// Declaring the function \nvoid main() \n{ \n int x, y; \n clrscr(); \n printf(\"Enter two numbers: \"); \n scanf(\"%d%d\", &x, &y); \n\n printf(\"Before swapping, First value is %d and Second value is %d\", x, y); \n swap(&x, &y); \n // Calling the function \n\n printf(\"\\nAfter swapping, First value is %d and Second value is %d\", x, y); \n getch(); \n} \n\nvoid swap(int *a, int*b) \n// Defining the function \n{ \n int z; \n z = *a; \n *a= *b; \n *b= z; \n} ",
+            "url": "https://drive.google.com/uc?id=1_Nrt0lusHlvkENEBGRk90Y3oHcTL3uYS",
+            "compile": false
+        },
+        {
+            "question": "Program to convert celsius and fahrenheit",
+            "code": "#include<stdio.h> \n#include<conio.h> \nvoid main() \n{ \n float c, f; \n clrscr(); \n printf(\"Enter temp in Celsius: \"); \n scanf(\"%f\", &c); \n\n f=(1.8*c)+32; \n\n printf(\"The Fahrenheit is %f\", f); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1m6ksujYjCKhtbjtvuyY6Fe75KXw5q42k",
+            "compile": false
+        },
+        {
+            "question": "Program to display n amount of numbers",
+            "code": "#include<stdio.h> \n#include<conio.h> \nvoid main () \n{ \n int arr[20], n, i; \n clrscr(); \n\n printf(\"Enter the number the elements: \"); \n scanf(\"%d\", &n); \n\n printf(\"Enter the elements: \\n\"); \n for(i=0; i<amp;n; i++) \n { \n  printf(\"Arr [%d] = \",i); \n  scanf(\"%d\", &arr[i]); \n } \n\n printf(\"\\The array elements are: \\n\"); \n for (i=0; i<n; i++) \n  printf(\"Arr[%d] = %d\\n\", i, arr[i]); \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1IyyjC_tpI5USp44BkIJNsVs9zQ0l28Bb",
+            "compile": false
+        },
+        {
+            "question": "Program to find the factorial of a number",
+            "code": "#include<stdio.h> \n#include<conio.h> \nvoid main() \n{ \n int n, i, factorial = 1; \n clrscr(); \n\n printf(\"Enter a number: \"); \n scanf(\"%d\", &n); \n\n if(n>0) \n { \n  fo(i=1; i<=n; ++i) \n  { \n   factorial *= i; \n  } \n  printf(\"The factorial of %d! is: %d\", n, factorial); \n } \n\n else \n { \n  printf(\"Error! Number can't be negative.\"); \n } \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1ON3zd3a0vCVcEDRgIHRBVspsfXq7iJW6",
+            "compile": false
+        }
+    ]
+}

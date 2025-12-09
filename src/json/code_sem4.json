@@ -1,0 +1,76 @@
+{
+    "data": [
+        {
+            "question": "Program to change the background color of text",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <graphics.h> \nvoid main() \n{ \n char a[10]; \n clrscr(); \n\n gotoxy (5,5); \n // Setting the position(row and column) of text \n\n textbackground(YELLOW); \n // Setting the background color of text as yellow \n\n cputs (\"BCA - Course Programming\"); \n\n getch(); \n restorecrtmode (); \n} ",
+            "url": "https://drive.google.com/uc?id=14lEBLeHwACUs-Qk0mSOxSJHcNYNF9e5A",
+            "compile": false
+        },
+        {
+            "question": "Program to change color of text",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <graphics.h> \nvoid main() \n{ \n char a[10]; \n clrscr(); \n\n gotoxy(5,5); \n textcolor( YELLOW ); \n\n cputs (\"BCA - Course Programming\"); \n\n getch(); \n restorecrtmode (); \n}",
+            "url": "https://drive.google.com/uc?id=1tpvvamzEsHNeVX358upZFDYTdoPRO3_W",
+            "compile": false
+        },
+        {
+            "question": "Program to blink text",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <graphics.h> \nvoid main() \n{ \n char a[10]; \n clrscr(); \n\n gotoxy(5,5); \n\n textcolor( YELLOW+BLINK ); \n // BLINK is added to make the text blink \n\n cputs (\"BCA - Course Programming\"); \n\n getch(); \n restorecrtmode (); \n} ",
+            "url": "https://drive.google.com/uc?id=1vyly3v7HWAsgo1jb4UcEZ03H0GZthA9l",
+            "compile": false
+        },
+        {
+            "question": "Program to change color of screen",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <graphics.h> \nvoid main() \n{ \n int gd, gm; \n // Here 'gd' is Graphic Driver & 'gm' is Graphic Mode \n\n gd = DETECT; \n // DETECT is used to detect the monitor type \n // Graphic Mode is set automatically using DETECT Driver \n\n clrscr(); \n\n initgraph ( &gd, &gm, \"C:\\TurboC3\\BGI\" ); \n // Driver_path is different for different compilers & systems \n\n setbkcolor ( RED ); \n // Setting background color \n\n getch(); \n restorecrtmode (); \n} ",
+            "url": "https://drive.google.com/uc?id=1_pPXUOmYfDhnQK4pnnio0-z8UpxhkDZg",
+            "compile": false
+        },
+        {
+            "question": "Program to create a pixel on screen",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <graphics.h> \nvoid main() \n{ \n int gd, gm; \n gd = DETECT; \n clrscr(); \n\n initgraph (&gd, &gm, \"C:\\TurboC3\\BGI\"); \n\n putpixel ( 100, 200, YELLOW ); \n // Setting row, column and color of the pixel \n\n getch(); \n restorecrtmode (); \n} ",
+            "url": "https://drive.google.com/uc?id=1WaMvp--5Hd-s6lq5J3P_AIIJEM8de721",
+            "compile": false
+        },
+        {
+            "question": "Program to create a geometrical shape using pixel",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <graphics.h> \nvoid main() \n{ \n int gd, gm; \n gd = DETECT; \n clrscr(); \n\n initgraph ( &gd, &gm, \"C:\\TurboC3\\BGI\"); \n\n setbkcolor ( YELLOW ); \n\n putpixel ( 100, 200, RED); \n putpixel ( 100, 205, RED); \n putpixel ( 100, 210, RED); \n putpixel ( 100, 215, RED); \n putpixel ( 100, 220, RED); \n\n putpixel ( 105, 200, RED); \n putpixel ( 110, 200, RED); \n putpixel ( 115, 200, RED); \n putpixel ( 120, 200, RED); \n putpixel ( 125, 200, RED); \n\n putpixel ( 105, 220, RED); \n putpixel ( 110, 220, RED); \n putpixel ( 115, 220, RED); \n putpixel ( 120, 220, RED); \n putpixel ( 125, 220, RED); \n\n putpixel ( 125, 200, RED); \n putpixel ( 125, 205, RED); \n putpixel ( 125, 210, RED); \n putpixel ( 125, 215, RED); \n putpixel ( 125, 220, RED); \n\n getch(); \n closegraph (); \n}",
+            "url": "https://drive.google.com/uc?id=1z0tVIlEgAsTEz2428HuigVm6QJp5ntqL",
+            "compile": false
+        },
+        {
+            "question": "Program to find the largest number using graphics",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <graphics.h> \nvoid main() \n{ \n int a, b, c; \n clrscr(); \n\n textmode ( C80 ); \n textbackground ( BLUE ); \n textcolor ( YELLOW ); \n gotoxy ( 20, 10); \n\n cputs (\"Enter the 1st number: \"); \n scanf (\"%d\", &a); \n\n gotoxy ( 20, 12); \n cputs (\"Enter the 2nd number: \"); \n scanf (\"%d\", &b); \n\n textcolor ( RED + BLINK ); \n if ( a > b ) \n { \n  gotoxy ( 20, 15); \n  cputs (\"The largest number is: \"); \n  printf (\"%d\", a); \n } \n\n else \n { \n  gotoxy ( 20, 15); \n  cputs (\"The largest number is: \"); \n  printf (\"%d\", b); \n } \n\n getch(); \n restorecrtmode (); \n}",
+            "url": "https://drive.google.com/uc?id=1W-wh5plotOZlm2TOlrbeNv655HgeG-UU",
+            "compile": false
+        },
+        {
+            "question": "Program to create a rectangle",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <graphics.h> \nvoid main() \n{ \n int gd = DETECT, gm; \n clrscr(); \n\n initgraph ( &gd, &gm, \"C:\\TurboC3\\BGI\" ); \n\n rectangle ( 50, 100, 250, 200 ); \n /* allocating ( left_side, top_side, right_side, bottom_side ) */ \n\n getch(); \n restorecrtmode (); \n} ",
+            "url": "https://drive.google.com/uc?id=16XrG5qZ5N3_FQfvNQ5zq5qmAq4dcZCpL",
+            "compile": false
+        },
+        {
+            "question": "Program to create a circle",
+            "code": "#include <stdio.h> \n#include <graphics.h> \n#include <conio.h> \nvoid main() \n{ \n int gd = DETECT, gm, x=300, y=250, radius = 100; \n clrscr(); \n\n initgraph ( &gd, &gm, \"C:\\TurboC3\\BGI\" ); \n\n circle ( x, y, radius ); \n /* Setting position of x & y axis and radius of circle */ \n\n getch(); \n restorecrtmode (); \n} ",
+            "url": "https://drive.google.com/uc?id=1IZ1jhkJL86qGNvFSoCjlzIS2nM1B4rfm",
+            "compile": false
+        },
+        {
+            "question": "Program to create a bar",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <graphics.h> \nvoid main() \n{ \n int gd = DETECT, gm; \n clrscr(); \n\n initgraph ( &gd, &gm, \"C:\\TurboC3\\BGI\" ); \n\n bar ( 20, 150, 50, 20 ); \n /* allocating ( left_side, top_side, right_side, bottom_side ) */ \n\n getch(); \n restorecrtmode (); \n} ",
+            "url": "https://drive.google.com/uc?id=1kHCsXHVqdxM0zpdJbBVzeM7ZOJZOek62",
+            "compile": false
+        },
+        {
+            "question": "Program to create a line",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <graphics.h> \nvoid main() \n{ \n int gd = DETECT, gm; \n clrscr(); \n\n initgraph ( &gd, &gm, \"C:\\TurboC3\\BGI\" ); \n\n line ( 200, 100, 100, 100 ); \n\n getch(); \n restorecrtmode (); \n}",
+            "url": "https://drive.google.com/uc?id=1XhTERw8e95EZhFIIhUbhBbzJsPYIfx5F",
+            "compile": false
+        },
+        {
+            "question": "Program to create an ellipse",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <graphics.h> \nvoid main() \n{ \n int gd = DETECT, gm, x= 300, y= 200; \n clrscr(); \n\n initgraph ( &gd, &gm, \"C:\\TurboC3\\BGI\" ); \n\n ellipse ( x, y, 0, 360, 120, 60 ); \n\n getch(); \n restorecrtmode (); \n}",
+            "url": "https://drive.google.com/uc?id=1bhndeeg4ujo1hWHtrYaaihXIEGl9OMF9",
+            "compile": false
+        }
+    ]
+}

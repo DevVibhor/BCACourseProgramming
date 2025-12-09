@@ -1,0 +1,160 @@
+{
+    "data": [
+        {
+            "question": "Program to print your name",
+            "code": "#include <stdio.h> //header file \n#include <conio.h> //header file \nvoid main() \n{ \n printf (\"BCA - Course Programming\"); \n // For printing the statement \n\n getch(); \n // For holding the console window  \n} ",
+            "url": "https://drive.google.com/uc?id=1jZLp1TvWczRjY2X0RATBy7WIPcOIf53W",
+            "compile": false
+        },
+        {
+            "question": "Program to add two numbers",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int a= 10, b= 10, c; \n//Declaring and Initialising integer type variables \n\n c = a + b; \n// Addition of a & b and storing it to c  \n\n printf (\"The sum of %d and %d is : %d\", a, b, c);\n//%d is used for printing integer type values \n\n getch(); \n} ",
+            "url": "https://drive.google.com/uc?id=1qjiPXfwE_6JkfC2swFqU3Te36kXFHBX1",
+            "compile": false
+        },
+        {
+            "question": "Program to calculate simple interest",
+            "code": "#include <stdio.h> \n#include <conio.h>\n int main() \n{ \n int amount, rate, time, si; \n //Initialising Amount, Rate, Time and Standard Interest for storing Integer Values \n\n printf (\"Enter Principal Amount : \"); \n scanf (\"%d\", &amount); \n //Asking user to input Amount  \n\n printf (\"Enter Rate of Interest : \"); \n scanf (\"%d\", &rate); \n //Asking user to input Rate of Interest \n\n printf (\"Enter Period of Time : \"); \n scanf (\"%d\", &time); \n //Asking user to input Time Period  \n\n si = (amount * rate * time) / 100; \n //Assigning the method of calculation for S.I. to si \n\n printf (\"Simple Interest : %d\", si); \n //The Result \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1zpe5uYC5w4B9lknHZ_sTH-C5QwoTk8ep",
+            "compile": false
+        },
+        {
+            "question": "Program to add two numbers using scanf",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int a, b, c; \n printf (\"Enter two numbers to add\"); \n scanf (\"%d%d\",&a,&b); \n// 'scanf ' is used to take input from the user after running the program  \n\n c = a + b; \n// c will store the addition of a and b  \n\n printf (\"Sum of entered numbers = %d\", c); \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=19ZrnNgPio21JypCrUw-OieFj6lfAJ3X4",
+            "compile": false
+        },
+        {
+            "question": "Program to find out whether a number is even or odd by taking value from user",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int number; \n\n printf (\"Enter an integer: \");\n scanf (\"%d\", &number); \n\n if (number % 2 == 0) \n//If number is divisible by 2 \n { \n  printf (\"%d is even.\", number); \n } \n\n else \n//If number is not divisible by 2 \n { \n  printf (\"%d is odd.\", number); \n } \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1SyzIsto3LemvT12oJgjwmrlugjAB_I3O",
+            "compile": false
+        },
+        {
+            "question": "Program to determine whether a person has made profit or incurred loss. Also determine how much profit he made or loss incurred",
+            "code": "#include <stdio.h>\n#include <conio.h> \nvoid main() \n{ \n int cp, sp, profit, loss; \n\n printf (\"Enter Selling Price and Cost Price\"); \n scanf (\"%d%d\", &cp, &sp); \n\n if ( cp > sp ) \n { \n  loss = cp - sp; \n  printf (\"Loss is of %d\", loss); \n } \n\n else \n { \n  profit = sp - cp; \n  printf (\"Profit is of %d\", profit); \n } \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1HEqrkbEDokF5m16dbdIOZoj9sKNHQlOa",
+            "compile": false
+        },
+        {
+            "question": "Program to find whether the year input from user is leap year or not",
+            "code": "#include<stdio.h> \n#include<conio.h> \nvoid main() \n{ \n int year; \n printf (\"Enter a year: \"); \n scanf (\"%d\", &year); \n if( year%4==0) \n { \n  if ( year%100 == 0) \n  { \n   if ( year%400 == 0) \n   { \n    printf (\"%d is a Leap Year.\", year); \n   } \n   else \n   { \n    printf (\"%d is not a Leap Year.\", year); \n   } \n  } \n  else \n  { \n   printf (\"%d is a Leap Year.\", year ); \n  } \n } \n else \n { \n  printf (\"%d is not a Leap Year.\", year); \n } \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1LOiEkv3nfIfBkLZqf6tzGWGUqakcO1FV",
+            "compile": false
+        },
+        {
+            "question": "Program to find 5 subject marks and calculate percentage and division of student using if-else ladder",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int a, b, c, d, e, sum, total = 100; \n float perc; \n clrscr(); \n\n printf (\"Enter marks of 5 subjects: \"); \n scanf (\"%d%d%d%d%d\", &a, &b, &c, &d, &e); \n\n sum = a + b + c + d + e ; \n\n perc = ((sum*100)/total); \n\n if (perc < 40) \n  printf (\"You are FAIL!\"); \n else \n { \n  if (perc >= 60) \n   printf (\"You have got 1st Division.\"); \n  else \n  { \n   if (perc >= 50) \n    printf (\"You have got 2nd Division.\"); \n   else \n    printf (\"You have got 3rd Division.\"); \n  } \n } \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1uw7RYST45t_5LEO97hxURp31OVlDImIv",
+            "compile": false
+        },
+        {
+            "question": "Program to find 5 subject marks and calculare percentage and division of students using nested else-if and logical operators",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int a, b, c, d, e, sum, total = 100; \n float perc; \n clrscr(); \n\n printf (\"Enter your marks of 5 subjects: \\n\"); \n scanf (\"%d%d%d%d%d\", &a, &b, &c, &d, &e); \n\n sum = a + b + c + d + e; \n\n perc = (sum*100)/total; \n\n printf (\"The percentage of your marks is: %d \\n\", perc); \n\n if (total>=80) \n printf (\"You've got 1st Division.\"); \n\n else if (total>=60) \n printf (\"You've got 2nd Division.\"); \n\n else if (total>=40) \n printf (\"You've got 3rd Division.\"); \n\n else \n printf (\"You are FAIL!\"); \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1mSaDvikRn2lSA19-AwErloZmFlXC3pfL",
+            "compile": false
+        },
+        {
+            "question": "Program to count number of digits using do-while loop",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int i, b=0, c=0; \n clrscr(); \n\n printf (\"Enter a no: \"); \n scanf (\"%d\", &i); \n\n do \n { \n  b = i/10; \n  i = b; \n  c++; \n } \n\n while (i>0); \n { \n  printf (\"The no. of digits are: %d\",c); \n } \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1eUY0wIgHxj8R1KgDiUnIbs-MJO0oSokC",
+            "compile": false
+        },
+        {
+            "question": "Program to reverse a number using do-while loop",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n int i, b=0, a=0; \nclrscr(); \n\n printf (\"Enter a number: \"); \n scanf (\"%d\", &i); \n\n printf (\"The reverse is: \"); \n\n do \n { \n  a = i%10; \n  b = i/10; \n  i = b; \n  printf (\"%d\", a); \n } \n\n while (i>0); \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1Jko6KGFG96Y8irmpqM_vX75rwr84yLHk",
+            "compile": false
+        },
+        {
+            "question": "Program to calculate compound interest",
+            "code": "#include <stdio.h> \n#include <conio.h> \n#include <math.h> \nvoid main() \n{ \n int p,t; \n float r,amt,ci; \n clrscr(); \n\n printf (\"Enter Principal Amount: \"); \n scanf (\"%d\",&p); \n\n printf (\"Enter Time: \"); \n scanf (\"%d\",&t); \n\n printf (\"Enter Rate of interest: \"); \n scanf (\"%f\",&r); \n\n amt= p*pow((1+r/100),t); \n ci = amt-p; \n\n printf (\"Simple interest: %7.2f \",ci); \n printf (\"Total amount: %7.2f \",amt); \n\n getch(); \n\n}",
+            "url": "https://drive.google.com/uc?id=1HQxv-T7N70z9IkE_pPCHTvfmbNACROyl",
+            "compile": false
+        },
+        {
+            "question": "Program to print 1 to 10 numbers",
+            "code": "#include <stdio.h>\n#include <conio.h> \nint main() \n{ \n\n int i = 1; \n\n for (i = 1; i <= 10; i++) \n { \n  printf (\"%d\", i); \n } \n\n return 0; \n\n}",
+            "url": "https://drive.google.com/uc?id=1P9AQ73EICVAHQZlF92XvBIGJ9_oHu_RV",
+            "compile": false
+        },
+        {
+            "question": "Program to print 1 to 10 counting by using while loop",
+            "code": "#include <stdio.h>\n#include <conio.h>\n int main() \n{ \n\n int i = 1; \n\n while (i <= 10) \n { \n  printf (\"%d\", i); \n  i++; \n } \n\n return 0; \n\n}",
+            "url": "https://drive.google.com/uc?id=1WKlmToew0iLjP4jctfiL8yPcqIk5x4ZG",
+            "compile": false
+        },
+        {
+            "question": "Program to print 1 to 10 counting by using do-while loop",
+            "code": "#include <stdio.h>\n#include <conio.h>\n int main() \n{ \n int i = 1; \n do \n { \n  printf (\"%d\", i); \n  i++; \n } \n\n while (i <= 10); \n return 0; \n}",
+            "url": "https://drive.google.com/uc?id=16_WVTL9wakUHV77wcWM8RikQjwb1TR1J",
+            "compile": false
+        },
+        {
+            "question": "Program to print table of 2",
+            "code": "#include <stdio.h>\n#include <conio.h> \nvoid main() \n{ \n\n int num=2, r; \n clrscr(); \n\n printf (\"The Table Of Number Two\"); \n\n for (r=1;r<=10;r++) \n { \n  printf (\"%d * %d = %d\", num, r, num*r); \n } \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=17Ztaqdjl-Q82KF55Xe2pdrTqFfiLBosB",
+            "compile": false
+        },
+        {
+            "question": "Program to print table of any number",
+            "code": "#include <stdio.h>\n#include <conio.h> \nvoid main() \n{ \n\n int i, no, table=1; \n clrscr(); \n\n printf (\"Enter any number : \"); \n scanf (\"%d\", &no); \n\n printf (\"Table of %d\", no); \n\n for ( i=1;i<=10;i++ ) \n { \n  table = no * i; \n  printf (\"%d\", table); \n  printf (\"\\n\"); \n } \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1z85hCBVCyA5UJMNe2wUaXQQQos-xHCa1",
+            "compile": false
+        },
+        {
+            "question": "Program to show nesting of loop",
+            "code": "#include <stdio.h>\n#include <conio.h> \nint main() \n{ \n\n int i=1,j; \n\n while (i <= 5) \n { \n  j=1; \n  while (j <= i ) \n  { \n   printf (\"%d\", j); \n   j++; \n  } \n  printf (\"\\n\"); \n  i++; \n } \n return 0; \n}",
+            "url": "https://drive.google.com/uc?id=1oYLPpUA9f5bJS5iKVrPzmkLduLm9mSvw",
+            "compile": false
+        },
+        {
+            "question": "Program to find even numbers between 1 to 100",
+            "code": "#include <stdio.h>\ninclude <conio.h> \nint main() \n{ \n\n int counter; \n printf (\"Even numbers between 1 to 100\"); \n        \n \n /* Initialize counter with 1, and increment it in every iteration. \n  * For every value of counter check whether it is even number or \n  * not and print it accordingly \n  */ \n for (counter = 1; counter <= 100; counter++) \n { \n   //Even numbers are divisible by 2  \n   if ( counter%2 == 0) \n  { \n    \n// Counter is even, printing it  \n    printf (\"%d\", counter); \n  } \n } \n return 0; \n} ",
+            "url": "https://drive.google.com/uc?id=1Z6-9Sfza-lIBqOVi9WDdQ4lZ-kKO7bqh",
+            "compile": false
+        },
+        {
+            "question": "Program to calculate simple interest using scanf function",
+            "code": "#include <stdio.h> \n#include <conio.h> \nint main() \n{ \n\nfloat principle, time, rate, SI; \n\n// Input principle, rate and time from user \nprintf (\"Enter principle (amount): \"); \nscanf (\"%f\", &principle); \n\nprintf (\"Enter time: \"); \nscanf (\"%f\", &time); \n\nprintf (\"Enter rate: \"); \nscanf (\"%f\", &rate); \n\n// Calculating simple interest \nSI = (principle * time * rate) / 100; \n\nprintf (\"Simple Interest = %f\", SI); \nreturn 0; \n}",
+            "url": "https://drive.google.com/uc?id=19PWGph146BEgdIJwni1shiEpMgUSMhKe",
+            "compile": false
+        },
+        {
+            "question": "Program to calculate area and parameter of a rectangle and compare if the area and parameter are equal or not",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n\n float length=3.5, width=5.0, area, perimeter; \n clrscr(); \n\n area=length*width; //formula for area of rectangle \n printf (\"The area of rectangle is: %f \\n\", area); \n\n perimeter= 2*(length+width); //formula for perimeter of rectangle \n printf (\"The perimeter of rectangle is: %f \\n\", perimeter); \n\n if (area==perimeter) //Here '==' represents equals to \n printf (\"The area and perimeter of rectangle are equal.\\n\"); \n\n else \n printf (\"The area and perimeter of rectangle aren't equal.\\n\"); \n\n getch(); \n\n} ",
+            "url": "https://drive.google.com/uc?id=1CrcB58-AcjUOKgSg55JDh6BzBPpHvFm_",
+            "compile": false
+        },
+        {
+            "question": "Program to find greater number between two numbers",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n\n int a, b, big; \n clrscr(); \n\n printf (\"Enter two number : \"); \n scanf (\"%d%d\",&a,&b); \n if (a>b) \n { \n  big=a; \n } \n else \n { \n  big=b; \n } \n\n printf (\"Biggest of the two number is %d\", big); \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1IOL_SbpAF6_FcH_8TkpM2saD484eiGQy",
+            "compile": false
+        },
+        {
+            "question": "Program to implement break statement",
+            "code": "#include <stdio.h>\n#include <conio.h>\nint main()\n{ \n\n int i; \n double number, sum = 0.0; \n\n for (i=1; i <= 10; ++i) \n { \n  printf (\"Enter a n%d: \", i); \n  scanf (\"%lf\", &number); \n\n  // If user enters negative number, loop is terminated \n  if (number < 0.0) \n  { \n   break; \n  } \n  sum += number; // sum = sum + number; \n } \n\n printf (\"Sum = %.2lf\", sum); \n\n return 0; \n} ",
+            "url": "https://drive.google.com/uc?id=1haZG9fd57ismOsxjCBFoj0_qz9QNYKHU",
+            "compile": false
+        },
+        {
+            "question": "Program to find sum of digits of a number",
+            "code": "#include<stdio.h> \n#include<conio.h> \nvoid main() \n{ \n\n int a, b=0, c; \n clrscr(); \n\n printf (\"Enter a no.\\n\"); \n scanf (\"%d\", &a); \n\n do \n { \n\n  c = a%10; \n  a = a/10; \n  b = b+c; \n } \n\n while(a!=0); \n\n printf (\"\\nThe sum is: %d\", b); \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1p_rkXHY6iiaIMpaY1c6iG7_io31HGKDg",
+            "compile": false
+        },
+        {
+            "question": "Program to find ASCII value of a character entered by the user",
+            "code": "#include <stdio.h>\n#include <conio.h>\nint main()\n{ \n\n char c; \n printf (\"Enter a character: \"); \n // Reads character input from the user \n\n scanf (\"%c\", &c); \n // %d displays the integer value of a character \n // %c displays the actual character \n\n printf (\"ASCII value of %c = %d\", c, c); \n\n return 0; \n} ",
+            "url": "https://drive.google.com/uc?id=19zez2PUuhh9ODanhob75oP3WmSUJomc9",
+            "compile": false
+        },
+        {
+            "question": "Program to find predecessor & successor of a number",
+            "code": "#include <stdio.h> \n#include <conio.h> \nvoid main() \n{ \n\n int a, b, c; \n clrscr(); \n\n printf (\"Enter a number to find it's predecessor & successor: \\n\"); \n scanf (%d, &a); \n\n b = a + 1; \n printf (\"The successor of %d is: %d\\n\", a, b); \n\n c = a - 1; \n printf (\"The predecessor of %d is: %d\\n\", a, c); \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1PAsM1W14D87U6kr_HitG1_C4Al8CcnLG",
+            "compile": false
+        }
+    ]
+}

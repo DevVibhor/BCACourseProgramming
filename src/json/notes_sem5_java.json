@@ -1,0 +1,154 @@
+{
+    "data": [
+        {
+            "question": "What is Java and why is it used?",
+            "answer": "Java is a high-level programming language that was first released by Sun Microsystems in 1995. It is a class-based, object-oriented language that is designed to be portable, meaning that the code written in Java can run on any platform that has a Java Virtual Machine (JVM) installed, without the need for recompilation.\nJava is widely used for developing a variety of applications including mobile, desktop, web, and games. It is popular due to its simple, yet powerful syntax, as well as its ability to handle complex tasks with ease. The Java Standard Library provides a vast array of tools and functions that allow developers to quickly and efficiently build robust applications.\n\nAdditionally, Java is considered to be a safe and secure language, as it includes a number of features that are designed to prevent errors and protect against malicious attacks. For example, Java implements automatic memory management through its use of a garbage collector, which eliminates the need for manual memory management and helps prevent memory leaks.\n\nIn summary, Java is a versatile, reliable, and secure programming language that is widely used for developing a variety of applications, from simple desktop applications to complex web applications.",
+            "code": "// A Hello World program in Java\npublic class HelloWorld {\n  public static void main(String[] args) {\n    System.out.println(\"Hello, World!\");\n  }\n}",
+            "compile": false
+        },
+        {
+            "question": "What are the main features of Java?",
+            "answer": "• Object-Oriented: Java is based on the object-oriented programming paradigm, which means that it focuses on objects rather than procedures and data.\n\n• Platform-Independent: Java code can run on any platform that has a Java Virtual Machine (JVM) installed.\n\n• Robust: Java has a strong type checking mechanism and an automatic memory management system, which helps prevent errors and provides stability.\n\n• Secure: Java was designed to be secure, with features like a secure class loading mechanism, access restrictions, and built-in security features.\n\n• Dynamic: Java supports dynamic loading of classes, dynamic compilation, and dynamic execution of code, which makes it a highly flexible language.\n",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is the Java Virtual Machine (JVM)?",
+            "answer": "The Java Virtual Machine (JVM) is a software environment that allows Java code to run on any device. The JVM provides an abstract layer between the Java code and the underlying hardware, ensuring that Java code can run on any device with a JVM installed. It also provides a runtime environment for executing Java code, managing memory, and providing security.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is an object?",
+            "answer": "An object in Java is an instance of a class, which is a blueprint or template for creating objects. Classes define the structure and behavior of objects, including their variables (known as instance variables or attributes) and methods.\nTo create an object in Java, you use the \"new\" operator to instantiate a class. The \"new\" operator returns a reference to a new instance of the class, which you can then use to access the object's variables and methods.\n\nIt is important to note that objects in Java are dynamically created at runtime, and their state can change as the program runs. For example, the value of an object's instance variables can be changed, and the object can be sent messages (by calling its methods) that cause it to perform various actions.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is inheritance?",
+            "answer": "Inheritance in Java is a mechanism that allows a class to inherit properties and behavior from a parent class. This allows you to create new classes that are built upon existing classes, making it easier to reuse code and write more maintainable code. The class that inherits the properties and behavior is called a subclass and the class that is being inherited from is called the superclass.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is polymorphism?",
+            "answer": "Polymorphism is a concept in object-oriented programming that allows objects of different classes to be treated as objects of a common class. This means that you can write code that works with objects of different classes, without having to know the exact class of the object at compile time.\nIn Java, polymorphism is achieved through method overriding. Method overriding is the process of creating a method in a subclass with the same name and parameters as a method in the superclass. The subclass method provides a new implementation of the method that is specific to the subclass. When an object of the subclass is created, the subclass method is called instead of the superclass method.\n\nPolymorphism is useful in many situations, such as when you have a collection of objects of different classes, and you want to perform the same action on all of them.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is an exception?",
+            "answer": "An exception in Java is an event that occurs during the execution of a program that disrupts the normal flow of instructions. Exceptions can be caused by various factors, such as invalid input, resource exhaustion, or programming errors. Java provides a mechanism for handling exceptions, allowing developers to catch and respond to exceptions in a controlled way.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is the difference between a checked and an unchecked exception?",
+            "answer": "A checked exception is a type of exception that must be caught or declared in a throws clause in the method that throws it. Checked exceptions are typically used to indicate a problem that the caller of the method should be aware of and handle. Examples of checked exceptions include FileNotFoundException and SQLException.\n\nAn unchecked exception is a type of exception that does not need to be caught or declared in a throws clause. Unchecked exceptions are typically used to indicate programming errors, such as NullPointerException or ArrayIndexOutOfBoundsException.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is a static method in Java and why is it used?",
+            "answer": "A static method in Java is a method that is associated with the class rather than with a specific instance of the class. Static methods can be called without creating an instance of the class, and they can only access static fields and methods.\n\nStatic methods are used to provide utility methods that can be used by other classes without creating an instance of the class. They are also used to provide a way to access class-level information, such as a shared resource or configuration, without having to create an instance of the class.\n\nStatic methods can be called using the class name, rather than an instance of the class, and they can be called without creating an instance of the class. This makes them convenient for utility functions that don't need to access instance-specific data.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is the main method and why is it important?",
+            "answer": "The main method in Java is the starting point for executing a Java program. The main method is a static method that is defined in the class containing the entry point for the application.\n\nThe main method is important because it is the entry point for executing a Java program. When you run a Java program, the Java Virtual Machine (JVM) looks for the main method and starts executing the code in the method.",
+            "code": "public static void main(String[] args) {\n    // code to be executed\n}",
+            "compile": false
+        },
+        {
+            "question": "What is the difference between == and .equals()?",
+            "answer": "In Java, the == operator is used to compare the references of two objects to see if they refer to the same object in memory. On the other hand, the .equals() method is used to compare the contents of two objects to see if they are equal.",
+            "code": "String s1 = \"Hello\";\nString s2 = \"Hello\";\nString s3 = new String(\"Hello\");\n\nSystem.out.println(s1 == s2); // true\nSystem.out.println(s1 == s3); // false\nSystem.out.println(s1.equals(s2)); // true\nSystem.out.println(s1.equals(s3)); // true\n",
+            "compile": false
+        },
+        {
+            "question": "What is a constructor and why is it used?",
+            "answer": "A constructor in Java is a special method that is called when an instance of a class is created. Constructors are used to initialize the state of an object when it is created.\n\nConstructors can have parameters, and they can be overloaded. This allows you to create multiple constructors with different parameter lists to support different ways of creating an object.\n\nConstructors are important in Java because they provide a way to set up the initial state of an object when it is created.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is the difference between a constructor and a method?",
+            "answer": "A constructor in Java is a special method that is called when an instance of a class is created. A method in Java is a block of code that performs a specific task and can be called on an object.\n\nConstructors are used to initialize the state of an object when it is created, while methods are used to perform specific tasks on an object.\n\nConstructors do not have a return type, while methods can have a return type. Constructors also have the same name as the class, while methods can have any name.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is a try-catch block and why is it used?",
+            "answer": "A try-catch block in Java is a control flow construct used to handle exceptions. It consists of a try block, which contains the code that might throw an exception, and a catch block, which contains the code that will handle the exception if it is thrown.\n\nTry-catch blocks are used to handle exceptions in a structured way, allowing you to write code that can handle errors or unexpected conditions in a controlled manner, without causing the program to terminate abruptly.\n\nBy using try-catch blocks, you can write code that can recover from exceptions, log errors, or perform other actions to handle the exception, before continuing with normal program execution.\n\nTry-catch blocks can also be nested, allowing you to handle different exceptions in different ways, depending on the type of exception that is thrown.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is the finally block and why is it used?",
+            "answer": "The finally block in Java is a block of code that is executed after the try block and catch block have completed, regardless of whether an exception was thrown or not. The finally block is used to ensure that certain code is executed, even if an exception is thrown.\n\nThe finally block is typically used to clean up resources that were opened in the try block, such as closing a file or releasing a connection. This ensures that the resources are properly cleaned up, even if an exception is thrown during the execution of the try block.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is the difference between a private and a protected method?",
+            "answer": "A private method in Java is a method that can only be accessed within the same class. A protected method in Java is a method that can be accessed within the same class and any subclasses.\n\nPrivate methods are used to provide an implementation detail that should not be visible or accessible outside of the class. Protected methods are used to provide an implementation detail that should be accessible to subclasses, but not to other classes outside of the hierarchy.\n\nBy using private and protected methods, you can control the visibility and accessibility of the methods within your class, ensuring that only the methods that are intended to be used by other classes are accessible.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is an interface and why is it used?",
+            "answer": "An interface in Java is a blueprint for a class. It defines a set of methods that a class must implement, but does not provide an implementation for those methods. An interface is used to define a common set of methods that can be used by multiple classes, regardless of their implementation.\n\nInterfaces are used to define a contract that must be followed by all classes that implement the interface. This allows for loose coupling between classes, as each class is only required to implement the methods defined by the interface, not any specific implementation.\n\nInterfaces are also used to create a common set of methods for classes that are related by a common feature, such as implementing a specific type of data structure or having a specific behavior.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is an abstract class and why is it used?",
+            "answer": "An abstract class in Java is a class that cannot be instantiated and is intended to be subclassed. An abstract class is used as a base class for creating new classes. It provides a common set of methods and fields that can be inherited by its subclasses.\n\nAn abstract class can contain both abstract methods (methods without a body) and concrete methods (methods with a body). Abstract methods must be implemented by subclasses, while concrete methods can be used directly by subclasses.\n\nAbstract classes are used to provide a common implementation of a set of related classes, while still allowing each class to have its own unique implementation.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is a package and why is it used?",
+            "answer": "A package in Java is a collection of related classes and interfaces that are grouped together. Packages are used to organize your code, making it easier to find and use the classes and interfaces you need.\n\nPackages also provide a way to prevent naming conflicts between classes and interfaces, by ensuring that all class and interface names are unique within the package. This allows you to use the same names for different classes and interfaces in different packages, without having any conflicts.\n\nPackages are also used to create a hierarchy of related classes and interfaces, making it easier to understand and maintain your code.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is a JAR file and why is it used?",
+            "answer": "A JAR file in Java is a file format used to package and distribute Java class files, resources, and other metadata. JAR files are used to bundle multiple class files and resources into a single file, making it easier to distribute and deploy Java applications.\n\nJAR files can also be used to manage dependencies between different Java components, by including all of the required classes and resources in a single JAR file. This makes it easier to manage and update the components, as all of the dependencies are contained within the JAR file.\n\nJAR files are also used to package Java libraries and plugins, making it easier to distribute and use these components in other Java applications.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is a stream and why is it used?",
+            "answer": "A stream in Java is a sequence of elements, which can be processed in parallel or sequentially. Streams are used to process collections of data in a functional and concise manner, and are a key feature of Java 8 and later.\n\nBy using streams, you can write code that is more expressive, readable, and efficient, as streams provide a way to perform operations on collections of data in a more functional and parallelizable way.\n\nStreams also provide a way to manipulate collections of data in a declarative manner, without having to write low-level, imperative code, which can make it easier to write, understand, and maintain your code.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is parallel processing and how is it achieved?",
+            "answer": "Parallel processing in Java refers to the execution of multiple tasks simultaneously, using multiple threads of execution. Parallel processing allows you to take advantage of multiple processors or cores, improving the performance of your program by allowing it to execute tasks faster.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is the difference between a break statement and a continue statement?",
+            "answer": "A break statement in Java is used to exit a loop early, before its normal termination condition is met. For example, you might use a break statement to exit a loop if a certain condition is met.\n\nA continue statement in Java is used to skip the remainder of the current iteration of a loop and continue with the next iteration. For example, you might use a continue statement to skip over a specific iteration of a loop if a certain condition is met.\n\nThe main difference between the two statements is that a break statement exits the loop completely, while a continue statement skips only the remainder of the current iteration and continues with the next iteration.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is the difference between a private method and a protected method?",
+            "answer": "A private method in Java is a method that can only be accessed within the same class. Private methods are not accessible from outside the class, and cannot be overridden by subclasses.\n\nA protected method in Java is a method that can be accessed within the same class and by subclasses. Protected methods are not accessible from outside the class or its subclasses, but can be overridden by subclasses to provide a unique implementation.\n\nThe main difference between the two methods is that private methods can only be accessed within the same class, while protected methods can be accessed by subclasses as well.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is a null value and why is it used?",
+            "answer": "A null value in Java is a special value that represents the absence of a value. Null values are used to indicate that a reference variable does not refer to an object, and that no object exists at that reference.\n\nNull values are used to indicate that a reference variable does not refer to an object, and that no object exists at that reference. This allows you to write code that can handle the case where an object does not exist, without causing a null reference exception.\n\nNull values are also used to initialize reference variables, to indicate that they do not refer to an object.",
+            "code": "",
+            "compile": null
+        }
+    ]
+}

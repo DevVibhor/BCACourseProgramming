@@ -1,0 +1,160 @@
+{
+    "data": [
+        {
+            "question": "What is SQL and what does it stand for?",
+            "answer": "SQL stands for Structured Query Language and it is a standard programming language used for managing and manipulating relational databases. It is used to insert, update, delete, and retrieve data from a database.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is a relational database?",
+            "answer": "A relational database is a type of database that organizes data into one or more tables, with each table consisting of a set of rows and columns. The rows represent records, and the columns represent the attributes of those records. Relationships between tables can be established using keys, which allow data to be linked and retrieved in a meaningful way.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is a primary key in a relational database?",
+            "answer": "A primary key is a unique identifier for each record in a table. It is used to enforce referential integrity, meaning that a record in one table must have a corresponding record in another table when a relationship is established between the two tables. The primary key ensures that each record can be uniquely identified and helps to prevent data redundancy.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is a foreign key in a relational database?",
+            "answer": "A foreign key is a field in a table that refers to the primary key of another table. It is used to establish a relationship between two tables and is used to enforce referential integrity, meaning that a record in one table must have a corresponding record in another table. The foreign key ensures that data in one table is related to data in another table.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is the difference between a SELECT and a JOIN statement in SQL?",
+            "answer": "A SELECT statement is used to retrieve data from one or more tables in a database. The data is returned as a result set, which is a table of data that meets the criteria specified in the SELECT statement.\n\nA JOIN statement is used to combine rows from two or more tables based on a related column between them. The result set is a combination of rows from each table that have matching values in the specified column. A JOIN statement can be used to combine data from multiple tables and retrieve data that is related between tables.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is the purpose of a WHERE clause in SQL?",
+            "answer": "The WHERE clause in SQL is used to filter the data that is returned by a SELECT, UPDATE, or DELETE statement. It specifies a condition that must be met in order for a record to be included in the result set. The WHERE clause is used to limit the data that is retrieved or updated, making it possible to focus on a specific subset of data.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is a subquery in SQL?",
+            "answer": "A subquery in SQL is a query that is nested within another query. It is used to retrieve data that will be used in the main query. The subquery returns a result set that is used as an input for the main query. Subqueries can be used to solve complex problems by breaking them down into smaller, simpler parts.\n\nFor example, the following SELECT statement uses a subquery to return only the customers who have placed an order:",
+            "code": "SELECT * FROM customers WHERE customer_id IN (SELECT customer_id FROM orders);",
+            "compile": false
+        },
+        {
+            "question": "What is an index in a relational database?",
+            "answer": "An index in a relational database is a database object that is used to improve the performance of SELECT, UPDATE, and DELETE statements. An index is a copy of the data in a table, organized in a way that makes it easier and faster to search for specific data. Indexes are used to speed up the process of searching for data by reducing the amount of data that needs to be searched.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is normalization in SQL and why is it important?",
+            "answer": "Normalization is a process of organizing data in a database in such a way that data redundancy is reduced and data dependencies are eliminated. The goal of normalization is to minimize data redundancy and improve data consistency. Normalization is important because it helps to prevent data inconsistencies and ensures that the data is stored in an efficient and organized manner.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is the difference between a RIGHT JOIN and a LEFT JOIN in SQL?",
+            "answer": "A RIGHT JOIN in SQL returns all records from the right table (the table specified in the RIGHT JOIN clause), and the matching records from the left table (the table specified in the FROM clause). If there is no match, NULL values will be displayed in the result set for the left table.\nA LEFT JOIN in SQL returns all records from the left table (the table specified in the FROM clause), and the matching records from the right table (the table specified in the LEFT JOIN clause). If there is no match, NULL values will be displayed in the result set for the right table.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is a stored procedure in SQL?",
+            "answer": "A stored procedure in SQL is a precompiled set of SQL statements that can be executed one or many times by calling its name. Stored procedures are used to encapsulate complex business logic and improve the performance of database applications by reducing the amount of SQL code that needs to be executed.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is a trigger in SQL?",
+            "answer": "A trigger in SQL is a set of SQL statements that are automatically executed in response to a specific event, such as an INSERT, UPDATE, or DELETE operation on a table. Triggers are used to enforce business rules, perform complex calculations, and enforce referential integrity.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is a constraint in SQL?",
+            "answer": "A constraint in SQL is a rule that is applied to the data in a table to enforce data integrity and consistency. Constraints are used to ensure that data entered into a table meets specific criteria, such as ensuring that a value is unique or that a value is not null. Some common constraints in SQL include primary key constraints, foreign key constraints, unique constraints, and check constraints.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "How can you limit the number of rows returned by a SELECT statement in SQL?",
+            "answer": "The number of rows returned by a SELECT statement can be limited using the LIMIT clause. The LIMIT clause specifies the maximum number of rows that should be returned by the SELECT statement.\nFor example, the following SELECT statement will return only the first 10 rows of the \"customers\" table:",
+            "code": "SELECT * FROM customers LIMIT 10;",
+            "compile": false
+        },
+        {
+            "question": "How can you sort the results of a SELECT statement in SQL?",
+            "answer": "The results of a SELECT statement can be sorted using the ORDER BY clause. The ORDER BY clause specifies the column or columns that should be used to sort the results, and the sort order (ascending or descending). For example, the following SELECT statement will return the \"customers\" table sorted by the \"last_name\" column in ascending order:",
+            "code": "SELECT * FROM customers ORDER BY last_name;",
+            "compile": false
+        },
+        {
+            "question": "How can you group data in a SELECT statement in SQL?",
+            "answer": "Data can be grouped in a SELECT statement using the GROUP BY clause. The GROUP BY clause specifies the columns that should be used to group the data. For example, the following SELECT statement will return a count of customers grouped by city:",
+            "code": "SELECT city, count(*) FROM customers GROUP BY city;",
+            "compile": false
+        },
+        {
+            "question": "What is an outer join in SQL?",
+            "answer": "An outer join in SQL is a type of join that returns all the rows from one table, and the matching rows from another table. If there is no match, NULL values will be displayed for the non-matching rows. There are three types of outer joins in SQL: left outer join, right outer join, and full outer join.",
+            "code": "",
+            "compile": null
+        },
+        {
+            "question": "What is a self join in SQL?",
+            "answer": "A self join in SQL is a join in which a table is joined with itself. A self join can be used to compare rows within the same table. For example, the following SELECT statement uses a self join to return all pairs of customers who live in the same city:",
+            "code": "SELECT c1.customer_id, c1.city, c2.customer_id, c2.city\nFROM customers c1\nJOIN customers c2\nON c1.city = c2.city\nAND c1.customer_id <> c2.customer_id;",
+            "compile": false
+        },
+        {
+            "question": "How can you update data in a table in SQL?",
+            "answer": "Data in a table can be updated using the UPDATE statement. The UPDATE statement specifies the table that should be updated, the new values for the columns, and the conditions that determine which rows should be updated. For example, the following UPDATE statement will increase the salary of all employees by 10%:\nsql",
+            "code": "UPDATE employees SET salary = salary * 1.1;",
+            "compile": false
+        },
+        {
+            "question": "How can you create a new table in SQL?",
+            "answer": "A new table can be created in SQL using the CREATE TABLE statement. The CREATE TABLE statement specifies the name of the table, and the columns and data types for the table. For example, the following CREATE TABLE statement creates a table named \"employees\" with columns for \"employee_id\", \"first_name\", \"last_name\", and \"hire_date\":",
+            "code": "CREATE TABLE employees (\n  employee_id INT PRIMARY KEY,\n  first_name VARCHAR(50),\n  last_name VARCHAR(50),\n  hire_date DATE\n);",
+            "compile": false
+        },
+        {
+            "question": "How can you add a new column to an existing table in SQL?",
+            "answer": "A new column can be added to an existing table in SQL using the ALTER TABLE statement. The ALTER TABLE statement specifies the table that should be modified, and the new column and data type. For example, the following ALTER TABLE statement adds a column named \"department\" to the \"employees\" table:",
+            "code": "ALTER TABLE employees ADD COLUMN department VARCHAR(50);",
+            "compile": false
+        },
+        {
+            "question": "How can you drop a column from an existing table in SQL?",
+            "answer": "A column can be dropped from an existing table in SQL using the ALTER TABLE statement. The ALTER TABLE statement specifies the table that should be modified, and the DROP COLUMN clause. For example, the following ALTER TABLE statement drops the \"department\" column from the \"employees\" table:",
+            "code": "ALTER TABLE employees DROP COLUMN department;",
+            "compile": false
+        },
+        {
+            "question": "How can you create a primary key in SQL?",
+            "answer": "A primary key can be created in SQL by adding a primary key constraint to a column in the table. The primary key constraint specifies the column or columns that should be used as the primary key. For example, the following CREATE TABLE statement creates a table with a primary key on the \"employee_id\" column:",
+            "code": "CREATE TABLE employees (\n  employee_id INT PRIMARY KEY,\n  first_name VARCHAR(50),\n  last_name VARCHAR(50),\n  hire_date DATE\n);",
+            "compile": false
+        },
+        {
+            "question": "How can you aggregate data in SQL using aggregate functions?",
+            "answer": "Data can be aggregated in SQL using aggregate functions such as SUM, AVG, COUNT, MIN, and MAX. Aggregate functions are used to perform calculations on a set of values, and return a single result. For example, the following SELECT statement retrieves the average salary of employees:",
+            "code": "SELECT AVG(salary)\nFROM employees;\n",
+            "compile": false
+        },
+        {
+            "question": "How can you join multiple tables in SQL using a JOIN clause?",
+            "answer": "Multiple tables can be joined in SQL using a JOIN clause in the SELECT statement. The JOIN clause specifies the tables to be joined, and the columns to be used to join the tables. For example, the following SELECT statement joins the \"employees\" and \"departments\" tables on the \"department_id\" column:",
+            "code": "SELECT employees.*, departments.department_name\nFROM employees\nJOIN departments ON employees.department_id = departments.department_id;",
+            "compile": false
+        },
+        {
+            "question": "How can you use subqueries in SQL?",
+            "answer": "Subqueries in SQL are used to return data that will be used in another query. A subquery is a SELECT statement that is nested inside another SELECT, INSERT, UPDATE, or DELETE statement. For example, the following SELECT statement retrieves the name of the department with the highest average salary:",
+            "code": "SELECT department_name\nFROM departments\nWHERE (SELECT AVG(salary) FROM employees WHERE employees.department_id = departments.department_id) = \n  (SELECT MAX(AVG(salary)) FROM employees GROUP BY department_id);",
+            "compile": false
+        }
+    ]
+}

@@ -1,0 +1,136 @@
+{
+    "data": [
+        {
+            "question": "What is object oriented programming?",
+            "answer": "OOP in C++ is a programming paradigm based on the concept of objects, which are instances of classes. It provides support for concepts like classes, objects, inheritance, polymorphism, and encapsulation. These concepts allow developers to create complex and structured programs, while keeping the code organized, maintainable, and reusable.",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is a class?",
+            "answer": "A class in C++ is a blueprint for creating objects. It defines a set of attributes and methods that describe the behavior of the objects of that class. A class acts as a blueprint for creating objects and encapsulates the data and behavior of the objects. A class definition specifies the data members (attributes) and member functions (methods) that the objects of that class can have.\n\nHere is the syntax of a class in C++:",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is an object?",
+            "answer": "An object in C++ is an instance of a class. Objects have data and behavior associated with them, which is defined by the attributes and methods in the class definition. An object is a variable of the class type and can be used to access and manipulate the data members and member functions of the class. An object is created by using the class constructor.\n\nHere is the syntax of an object of a class in C++:",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is inheritance?",
+            "answer": "Inheritance in C++ is a mechanism for creating a new class from an existing class. The new class is called the derived class and the existing class is called the base class. The derived class inherits the attributes and methods of the base class and can add its own attributes and methods. Inheritance allows a derived class to inherit the properties and behaviors of a base class and make modifications to them if necessary. It also enables code reuse and helps in creating more complex classes.\n\nHere is the syntax of inheritance in C++:",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is polymorphism?",
+            "answer": "Polymorphism in C++ is the ability of an object to take on multiple forms. This is achieved through method overloading, operator overloading, and virtual functions. Method overloading allows multiple methods with the same name but different parameters to be defined in a single class. Operator overloading allows operators to be redefined for objects of a class. Virtual functions allow different implementations of a method to be defined for different derived classes.\n\nHere is the syntax of polymorphism in C++:",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is encapsulation?",
+            "answer": "Encapsulation in C++ is the technique of hiding the implementation details of a class and exposing only the necessary information to the outside world. It is implemented in C++ through the use of access specifiers like public, private, and protected. The public specifier makes the members accessible from outside the class, the private specifier makes the members inaccessible from outside the class, and the protected specifier makes the members accessible from within the class and its derived classes.\n\nHere is the syntax of encapsulation in C++:",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is abstraction?",
+            "answer": "Abstraction in C++ is the process of hiding the complexity of a class and exposing only the essential features. This is achieved through the use of abstract classes and interfaces in C++. An abstract class is a class that cannot be instantiated and is used as a base class for other classes. An interface is a set of pure virtual functions (functions without a body) that are implemented by a derived class.",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is a constructor?",
+            "answer": "A constructor in C++ is a special member function of a class that is automatically called when an object is created from the class. Constructors are used to initialize the data members of an object and set their initial values. Constructors have the same name as the class and do not have a return type.",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is a destructor?",
+            "answer": "A destructor in C++ is a special member function that is called automatically when an object of a class goes out of scope or is deleted. Destructors are used to release any resources that were acquired by the object during its lifetime, such as memory, file handles, or network connections.",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is the difference between a constructor and a destructor?",
+            "answer": "The main difference between a constructor and a destructor is that a constructor is called automatically when an object of a class is created, while a destructor is called automatically when an object goes out of scope or is deleted. Constructors are used to initialize the data members of an object and set their initial values, while destructors are used to release any resources that were acquired by the object during its lifetime.",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is a copy constructor?",
+            "answer": "A copy constructor in C++ is a special constructor that is used to create a new object as a copy of an existing object. Copy constructors take a reference to an object of the same class as the parameter and create a new object with the same values as the original object. Copy constructors are called implicitly when an object is passed by value or when an object is returned from a function.",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is an abstract class?",
+            "answer": "An abstract class in C++ is a class that cannot be instantiated on its own, but can be used as a base class for other classes. Abstract classes are used to define a common interface for derived classes to implement. An abstract class contains one or more pure virtual functions, which are declared but not defined and must be overridden by derived classes.",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is a pure virtual function?",
+            "answer": "A pure virtual function in C++ is a virtual function declared but not defined in an abstract class. Pure virtual functions act as a placeholder for derived classes to provide their own implementation. A class containing a pure virtual function is considered abstract and cannot be instantiated.",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is a virtual function?",
+            "answer": "A virtual function in C++ is a member function of a class that can be overridden by derived classes. Virtual functions allow objects of different classes to be treated as objects of a common base class and to behave differently based on the type of object it is applied to. Virtual functions are declared using the virtual keyword and are usually overridden in derived classes.\n",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is a friend function?",
+            "answer": "A friend function in C++ is a non-member function that has access to the private and protected members of a class. Friend functions are declared using the friend keyword in the class definition and can be used to perform operations on class objects or to access their private data. Friend functions are not considered part of the class and do not have access to the this pointer.",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is a static function?",
+            "answer": "A static function in C++ is a member function that is declared with the static keyword and is shared by all objects of the class, but does not have access to the non-static members of the class. Static functions are accessed using the class name, rather than an object of the class, and are often used to provide utility functions for a class.",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is operator overloading?",
+            "answer": "Operator overloading in C++ allows operator symbols such as +, -, *, and / to be redefined to perform operations on objects of a user-defined class. Operator overloading enables objects of the class to be used in expressions and simplifies the syntax of operations on objects. Operator overloading is achieved through the use of special operator functions that are declared as members or non-members of the class.",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is data hiding?",
+            "answer": "Data hiding in C++ is the practice of keeping the internal representation of an object hidden from other parts of the program. This is achieved through the use of private access specifiers in classes, which limit the visibility of class members to within the class itself. Data hiding allows objects to be designed as black boxes that expose only the information and behavior that is necessary for other parts of the program to interact with them.",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is a base class?",
+            "answer": "A base class in C++ is a class that is used as a foundation or starting point for creating derived classes. Base classes define common properties and behaviors that can be inherited by derived classes. The base class is also referred to as the parent class or superclass.",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is a derived class?",
+            "answer": "A derived class in C++ is a class that is created from a base class and inherits the properties and behaviors of the base class. Derived classes can add new properties and behaviors, or override the properties and behaviors of the base class. The derived class is also referred to as the child class or subclass.",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is a friend class?",
+            "answer": "A friend class in C++ is a class that is declared as a friend of another class. Friend classes have access to the private and protected members of the class they are friends of, and can be used to provide additional functionality for a class that cannot be achieved through member functions alone. Friend classes are considered separate from the class they are friends of and are not considered members of the class.",
+            "code": "",
+            "compile": ""
+        },
+        {
+            "question": "What is the purpose of the \"this\" pointer?\n",
+            "answer": "The \"this\" pointer in C++ is a pointer that points to the current object within a member function. It is automatically defined in each member function and can be used to access the members of the object from within the member function. The \"this\" pointer is useful for accessing object members, resolving ambiguity, and for passing the object as an argument to another function.",
+            "code": "",
+            "compile": ""
+        }
+    ]
+}

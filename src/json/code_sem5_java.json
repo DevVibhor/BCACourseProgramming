@@ -1,0 +1,106 @@
+{
+    "data": [
+        {
+            "question": "Program to print your name on screen",
+            "code": "package mypackage; \n// Here mypackage is package name \n\npublic class myClass \n// Here myClass is class name \n{ \n public static void main(String args[]) \n { \n  System.out.println (\"BCA - Course Programming\"); \n } \n} ",
+            "url": "https://drive.google.com/uc?id=1DETMpb-KKFIsXZvMvoa1Rruw02YvPCX-",
+            "compile": false
+        },
+        {
+            "question": "Program to concatenate two strings",
+            "code": "package mypackage; \npublic class myClass \n{ \n public static void main(String args[]) \n { \n  System.out.println (\"BCA - Course Programming\" + \" by TechNark\"); \n  // Here + operator is used to concatenate strings \n } \n} ",
+            "url": "https://drive.google.com/uc?id=1O51TDP7csn7phr4XoXCnNylxNarz3CV3",
+            "compile": false
+        },
+        {
+            "question": "Program to take input from user",
+            "code": "package mypackage; \n\nimport java.util.Scanner; \n// Scanner class is imported to take input from the user \n\npublic class myClass \n{ \n public static void main(String args[]) \n { \n  Scanner age = new Scanner(System.in); \n\n  System.out.println (\"Enter your age: \"); \n  int number = age.nextInt (); \n  System.out.println (\"Your age is: \" + number); \n } \n} ",
+            "url": "https://drive.google.com/uc?id=1b6CgCjaWzh6Sf8zaSXwA1aQ59FK1iBYM",
+            "compile": false
+        },
+        {
+            "question": "Program to find addition of two numbers",
+            "code": "package mypackage; \nimport java.util.Scanner; \n\npublic class myClass \n{ \n public static void main(String args[]) \n { \n  int a, b, sum; \n  // storing integer type elements in a and b \n  // sum stores the addition of a and b \n  Scanner scanner; \n\n  scanner = new Scanner(System.in); \n\n  System.out.println (\"Enter the first element: \"); \n  a = scanner.nextInt (); \n\n  System.out.println (\"Enter the second element: \"); \n  b = scanner.nextInt (); \n\n  sum = a + b; \n  System.out.println (\"Sum of \" + a + \" & \" + b + \" is \" + sum); \n } \n} ",
+            "url": "https://drive.google.com/uc?id=15XcoBsJ6ck8MQr707_JkgCg9GeosbCFP",
+            "compile": false
+        },
+        {
+            "question": "Program to print ASCII value of a all lower case alphabets",
+            "code": "package mypackage; \nimport java.util.Scanner; \n\npublic class myClass \n{ \n public static void main(String args[]) \n { \n  int a; \n  for ( a = 0; a < 26; a++ ) \n  { \n   System.out.println((char) ('a'+a) + \" = \" + ('a'+a)); \n  } \n } \n}",
+            "url": "https://drive.google.com/uc?id=15y5WddllBNqS9JvCm1cAYWLl9TgViKsz",
+            "compile": false
+        },
+        {
+            "question": "Program to find area and perimeter of rectangle",
+            "code": "package mypackage; \nimport java.util.Scanner; \n\npublic class myClass \n{ \n public static void main(String args[]) \n { \n  int lgt, wid, area, peri; \n\n  Scanner in = new Scanner(System.in); \n\n  System.out.println (\"Enter the length: \"); \n  lgt = in.nextInt (); \n\n  System.out.println (\"Enter the width: \"); \n  wid = in.nextInt (); \n\n  area = lgt * wid; \n  // Area of rectangle = length x width \n\n  peri = 2 *( lgt + wid ); \n  // Perimeter of rectangle = 2 x ( length x width ) \n\n  System.out.println (\"Area of rectangle is: \"+ area); \n  System.out.println (\"Perimeter of rectangle is: \"+ peri); \n } \n} ",
+            "url": "https://drive.google.com/uc?id=1Y6RIwyALXWONEBpkTIA9jlTxabHJ2Hu4",
+            "compile": false
+        },
+        {
+            "question": "Program to find area and circumference of a circle",
+            "code": "package mypackage; \nimport java.util.Scanner; \n\npublic class myClass \n{ \n public static void main(String args[]) \n { \n  double r, area, circumference; \n  Scanner scanner = new Scanner(System.in); \n\n  System.out.println (\"Enter the radius of circle: \"); \n  r = scanner.nextDouble (); \n\n  area = 3.14 * r * r; \n  System.out.println (\"Area of circle is: \" + area); \n\n  circumference = 2 * 3.14 * r; \n  System.out.println (\"Circumference of circle is: \" + circumference); \n } \n}",
+            "url": "https://drive.google.com/uc?id=1WjsmG5Y_zZ66GeI7HXzkAHbm8ZcXq139",
+            "compile": false
+        },
+        {
+            "question": "Program to find largest number between three numbers",
+            "code": "package mypackage; \nimport java.util.Scanner; \n\npublic class myClass \n{ \n public static void main(String args[]) \n { \n  int a, b, c; \n  Scanner scanner = new Scanner(System.in); \n\n  System.out.println (\"Enter three elements to find the largest element: \"); \n  a = scanner.nextInt (); \n  b = scanner.nextInt (); \n  c = scanner.nextInt (); \n\n  if ( a > b ) \n  { \n   if ( a > c ) \n   { \n    System.out.println (\"Largest number is: \" + a); \n   } \n\n   else \n   { \n    System.out.println (\"Largest number is: \" + c); \n   } \n  } \n\n  else \n  { \n   if ( b > c ) \n   { \n    System.out.println (\"Largest number is: \" + b); \n   } \n   else \n   { \n    System.out.println (\"Largest number is: \" + c); \n   } \n  } \n } \n}",
+            "url": "https://drive.google.com/uc?id=1CwOOTCRjmcGXQeZvVoS3zJu4me5JScmy",
+            "compile": false
+        },
+        {
+            "question": "Program to check whether an element is even or odd",
+            "code": "package mypackage; \nimport java.util.Scanner; \n\npublic class myClass \n{ \n public static void main(String args[]) \n { \n  int a; \n  Scanner scanner = new Scanner(System.in); \n\n  System.out.println (\"Enter an element: \"); \n  a = scanner.nextInt (); \n\n  if ( a % 2 == 0 ) \n  { \n   // If the element is completely divisible by 2 then it is even \n   System.out.println ( a + \" is even.\" ); \n  } \n\n  else \n  { \n   System.out.println ( a + \" is odd.\" ); \n  } \n } \n} ",
+            "url": "https://drive.google.com/uc?id=1k3mRF9RJE2Cm11kjoaWhpTvfIJTNvYFL",
+            "compile": false
+        },
+        {
+            "question": "Program to print multiplication table of any number",
+            "code": "package mypackage; \nimport java.util.Scanner; \n\npublic class myClass \n{ \n public static void main(String args[]) \n { \n  int a, b; \n  Scanner scanner = new Scanner(System.in); \n\n  System.out.println (\"Enter a number: \"); \n  b = scanner.nextInt (); \n\n  for (a = 1; a <= 10; a++) \n  { \n   System.out.println ( b + \" x \" + a + \" = \" + b * a ); \n  } \n } \n}",
+            "url": "https://drive.google.com/uc?id=11nOl67evJuXy9aToHFQauV-Rkp8UjmPb",
+            "compile": false
+        },
+        {
+            "question": "Program to find the factorial of any number",
+            "code": "package mypackage; \nimport java.util.Scanner; \n\npublic class myClass \n{ \n public static void main(String args[]) \n { \n  int num, fact = 1, a; \n  Scanner scanner = new Scanner(System.in); \n\n  System.out.println (\"Enter a number: \"); \n  num = scanner.nextInt (); \n\n  for (a = 1; a <= num; a++) \n  { \n   fact = fact * a; \n  } \n\n  System.out.println (\"Factorial of \" + num + \" is: \" + fact); \n } \n}",
+            "url": "https://drive.google.com/uc?id=1Q-oVkyLFkM7CQALri01WBYWMMXoIrqgm",
+            "compile": false
+        },
+        {
+            "question": "Program to count number of digits present in a number",
+            "code": "package mypackage; \nimport java.util.Scanner; \n\npublic class myClass \n{ \n public static void main(String args[]) \n { \n  int num, count = 0, temp; \n  Scanner scanner = new Scanner(System.in); \n\n  System.out.println (\"Enter a number: \"); \n  num = scanner.nextInt(); \n\n  temp = num; \n  while (temp != 0) \n  { \n   temp = temp / 10; \n   ++count; \n  } \n\n  System.out.println (\"The number of digits present in \"+ num + \" are \" + count); \n } \n}",
+            "url": "https://drive.google.com/uc?id=1RfA1J7pPLGdA9aAkkdIL10b17x-uX42O",
+            "compile": false
+        },
+        {
+            "question": "Program to check the leap year",
+            "code": "package mypackage; \nimport java.util.Scanner; \n\npublic class myClass \n{ \n public static void main(String args[]) \n { \n  int a; \n  Scanner scanner = new Scanner(System.in); \n\n  System.out.println (\"Enter any year: \"); \n  a = scanner.nextInt (); \n\n  if ( ( ( a % 4 = = 0) && ( a % 100 != 0 ) ) || ( a % 400 = = 0 ) ) \n  { \n   System.out.println (a + \" is a Leap Year.\"); \n  } \n\n  else \n  { \n   System.out.println (a + \" is not a Leap Year.\"); \n  } \n } \n}",
+            "url": "https://drive.google.com/uc?id=1iwroV5KxU31NiVwIuymJK7gJmvr8gr_S",
+            "compile": false
+        },
+        {
+            "question": "Program to calculate simple interest",
+            "code": "package mypackage; \nimport java.util.Scanner; \n\npublic class myClass \n{ \n public static void main(String args[]) \n { \n  double principal, rate, time, si; \n  Scanner scanner = new Scanner(System.in); \n\n  System.out.println (\"Enter the principal amount: \"); \n  principal = scanner.nextDouble(); \n\n  System.out.println (\"Enter the rate of interest: \"); \n  rate = scanner.nextDouble(); \n\n  System.out.println (\"Enter the time period(in years): \"); \n  time = scanner.nextDouble(); \n\n  si = ( principal * rate * time ) / 100; \n\n  System.out.println (\"The Simple Interest is: \"+ si); \n } \n}",
+            "url": "https://drive.google.com/uc?id=1bC1qMmhr8SkYjmqObCyKclkx3azhVcxu",
+            "compile": false
+        },
+        {
+            "question": "Program to calculate if the number is palindrome or not which is entered by the user",
+            "code": "package mypackage; \nimport java.util.Scanner; \n\npublic class myClass \n{ \n public static void main(String args[]) \n { \n  int a=0, b, num, p; \n  Scanner scanner = new Scanner (System.in); \n\n  System.out.println (\"Enter any number: \"); \n  num = scanner.nextInt (); \n\n  b= num; \n  while (num>0) \n  { \n   p= num % 10; \n   a= (a*10) + p; \n   num= num/10; \n  } \n\n  if (b==a) \n  { \n   System.out.println (b + \" is a palindrome number.\"); \n  } \n\n  else \n  { \n   System.out.println (b + \" is not a palindrome number.\"); \n  } \n } \n}",
+            "url": "https://drive.google.com/uc?id=1kNfCiVtsDvLkM5jv8xHFOWJ2Nqbg5gX9",
+            "compile": false
+        },
+        {
+            "question": "Program to swap two numbers without using third variable",
+            "code": "package mypackage; \nimport java.util.Scanner; \n\npublic class myClass \n{ \n public static void main(String args[]) \n { \n  int a, b; \n  Scanner scanner = new Scanner (System.in); \n\n  System.out.println(\"Enter two numbers: \"); \n  a = scanner.nextInt(); \n  b = scanner.nextInt(); \n\n  System.out.println(\"The values before swapping are: \"+ a +\" and \" + b); \n\n  a= a + b; \n  b= a - b; \n  a= a - b; \n\n  System.out.println(\"The values after swapping are: \"+ a +\" and \"+ b); \n } \n}",
+            "url": "https://drive.google.com/uc?id=1bbAK3dKiKi203jncGAPExGrNdZV8DwUp",
+            "compile": false
+        },
+        {
+            "question": "Program to add each digit of a number entered by the user",
+            "code": "package mypackage; \nimport java.util.Scanner; \n\npublic class myClass \n{ \n public static void main(String args[]) \n { \n  int a, b, sum= 0; \n  Scanner scanner = new Scanner (System.in); \n\n  System.out.println(\"Enter a number: \"); \n  a = scanner.nextInt(); \n\n  while (a>0) \n  { \n   b = a % 10; \n   sum = sum + b; \n   a = a / 10; \n  } \n  System.out.println(\"The sum of each digit of the number is: \"+ sum); \n } \n}",
+            "url": "https://drive.google.com/uc?id=1lXhaUHyE4Y-lXR4E2n0gmHY4pywjZ1RC",
+            "compile": false
+        }
+    ]
+}

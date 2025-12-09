@@ -1,0 +1,124 @@
+{
+    "data": [
+        {
+            "question": "Query to create a table, insert attributes and values in the database",
+            "code": "create database mydatabase; \n-- Here ‘mydatabase’ is name of the database \n\ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \n-- Here info is name of the table where name, age, course and city are attributes/columns \n-- And Name is an attribute which stores characters type values upto 20 characters \n-- Age is an attribute which stores integer type values \n\ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Patel', 22, 'BCA', 'Noida'); \n-- insert is used for inserting values to attributes \n\nselect * from info; \n-- * is used for selecting all the fields inside the table and display them ",
+            "url": "https://drive.google.com/uc?id=1OWbxeG6-cLqdezGaXym4-BNpDy6_EGqE",
+            "compile": false
+        },
+        {
+            "question": "Query to sort the element present inside the table",
+            "code": "-- order by is a keyword which used for sorting the elements is ascending/descending order \n-- for sorting in ascending order we use asc and desc for descending \n\ncreate database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Patel', 22, 'BCA', 'Noida'); \nselect * from info order by Age asc; \n-- Here we are sorting in ascending order using column age ",
+            "url": "https://drive.google.com/uc?id=1XfPb_1sJg92bj2BwEBLfYv21jqpXcb-c",
+            "compile": false
+        },
+        {
+            "question": "Query to update existing data stored inside a table",
+            "code": "-- update is a keyword which is used to update the existing data \n\ncreate database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Patel', 22, 'BCA', 'Noida'); \n\nupdate info set City='Vasundhara' where Name='Patel'; \n-- Here we are updating data of column ‘City’ where the city name will be updated if Name is ‘Patel’. \n\nselect * from info; ",
+            "url": "https://drive.google.com/uc?id=1Ter22BovGarj2YsXu-3vfJVbYiZzj_rQ",
+            "compile": false
+        },
+        {
+            "question": "Query to add a column in an existing table",
+            "code": "-- alter is used for adding, deleting and modifying columns in an existing table \n\ncreate database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Patel', 22, 'BCA', 'Noida'); \n\nalter table info add ID int; \n-- Here a new column ‘ID’ of integer data-type has been added into the table \n-- By default, NULL value is stored if data is not added \n-- We can also use ‘drop’ instead of ‘add’ to delete a column from the table \n\nselect * from info; ",
+            "url": "https://drive.google.com/uc?id=1vFjKq9SClfK0JVEHx7P3cHzFeZsgX2xJ",
+            "compile": false
+        },
+        {
+            "question": "Query to drop/delete a column from an existing table",
+            "code": "create database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Patel', 22, 'BCA', 'Noida'); \nalter table info drop ID; \n-- Here drop is used to delete the column ID \nselect * from info; ",
+            "url": "https://drive.google.com/uc?id=17L8KoecQE3n-kLSH-kXOKqWVqqFuwVC1",
+            "compile": false
+        },
+        {
+            "question": "Query to find the sum of all the elements present inside column",
+            "code": "create database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Patel', 22, 'BCA', 'Noida'); \n\nselect sum(Age) from info; \n-- sum() is a library function which calculates the sum of all the elements present inside column ",
+            "url": "https://drive.google.com/uc?id=12lidfetAxsjQR2UrrgWFAQuC2s8wDoN3",
+            "compile": false
+        },
+        {
+            "question": "Query to find the maximum value from all the elements present inside the column",
+            "code": "create database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Patel', 22, 'BCA', 'Noida'); \n\nselect sum(Age) from info; \n-- sum() is a library function which calculates the sum of all the elements present inside column ",
+            "url": "https://drive.google.com/uc?id=1IvCrQzsU51l7wLFagwgPsZprq_2RxfHQ",
+            "compile": false
+        },
+        {
+            "question": "Query to fint the minimum value from all the elements present inside the column",
+            "code": "create database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Patel', 22, 'BCA', 'Noida'); \n\nselect min(Age) from info; \n-- min() is a library function which finds the minimum value from all the elements present inside column ",
+            "url": "https://drive.google.com/uc?id=1OkqZRRkHNW7C1Zv13TjH2en5br7QmJXh",
+            "compile": false
+        },
+        {
+            "question": "Query to find the average value of all the elements present inside the column",
+            "code": "create database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Patel', 22, 'BCA', 'Noida'); \n\nselect avg(Age) from info; \n-- avg() is a library function which finds the average of all the elements present inside column ",
+            "url": "https://drive.google.com/uc?id=1DUVB_UXE_j4rKxASoI0coTRc9JM-xvlb",
+            "compile": false
+        },
+        {
+            "question": "Query to count all the elements present inside the column",
+            "code": "create database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Patel', 22, 'BCA', 'Noida'); \n\nselect count(Age) from info; \n-- count() is a library function which counts all the elements present inside column ",
+            "url": "https://drive.google.com/uc?id=1O1G0DS5fbdZ5FTsfsdfSnsRHm91IYop6",
+            "compile": false
+        },
+        {
+            "question": "Query to delete a row from the table",
+            "code": "-- delete is a keyword which is used to deleting row data from the table \n\ncreate database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Patel', 22, 'BCA', 'Noida'); \n\ndelete from info where Name='Patel'; \n-- Here ‘info’ is table name and ‘Name’ is column name \n-- Row containing ‘Patel’ will be deleted from the table \n-- We can also delete rows by selecting values from other columns also \nselect * from info; ",
+            "url": "https://drive.google.com/uc?id=1ZxxTDk7aWVmyczdKit3cdLUuu4H4sgnM",
+            "compile": false
+        },
+        {
+            "question": "Query to display particular row data",
+            "code": "create database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Kevin', 32, 'BTech', 'Vasundhara'); \ninsert into info values ('Edward', 40, 'BSc', 'London'); \ninsert into info values ('Benjamin', 16, 'BBA', 'Japan'); \n\nselect * from info where Course='BSc'; \n-- Here ‘BSc’ is working as a parameter which allows us to access specified and more organized data \nselect * from info; ",
+            "url": "https://drive.google.com/uc?id=1n-hBy1S5EPvLPzpLoAT5-Dg8pBsfNJWD",
+            "compile": false
+        },
+        {
+            "question": "Query to implement AND opertor ",
+            "code": "-- AND operator filters records when both conditions are true \ncreate database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Kevin', 32, 'BTech', 'Vasundhara'); \ninsert into info values ('Edward', 40, 'BSc', 'London'); \ninsert into info values ('Benjamin', 16, 'BBA', 'Japan'); \ninsert into info values ('Dashie', 39, 'BTech', 'Tokyo'); \n\nselect * from info where Course='BTech' AND City='Vasundhara'; \n-- While using AND operator both of the conditions need to be satisfied \n-- If either one of the conditions is not satisfied the data will not be returned ",
+            "url": "https://drive.google.com/uc?id=1wkIGoMN1otCRTJ8s6K0PQbhZeW8Opvq7",
+            "compile": false
+        },
+        {
+            "question": "Query to implement OR operator",
+            "code": "-- OR operator filters records when either one of the conditions are true \ncreate database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Kevin', 32, 'BTech', 'Vasundhara'); \ninsert into info values ('Edward', 40, 'BSc', 'London'); \ninsert into info values ('Benjamin', 16, 'BBA', 'Japan'); \ninsert into info values ('Dashie', 39, 'BTech', 'Tokyo'); \n\nselect * from info where Course='BTech' OR City='London'; \n-- While using OR operator any one of the conditions need to be satisfied \n-- If any of the conditions is true the data will be returned ",
+            "url": "https://drive.google.com/uc?id=14IQn2aT-vxlXjVS7qnWbv3A0kAbePRDF",
+            "compile": false
+        },
+        {
+            "question": "Query to implement NOT operator",
+            "code": "-- NOT operator filter records only when the condition is true. \ncreate database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Kevin', 32, 'BTech', 'Vasundhara'); \ninsert into info values ('Edward', 40, 'BSc', 'London'); \ninsert into info values ('Benjamin', 16, 'BBA', 'Japan'); \ninsert into info values ('Dashie', 39, 'BTech', 'Tokyo'); \n\nselect * from info where NOT Course='BTech'; \n-- Here all the tuples containing ‘BTech’ as a ‘Course’ will not be returned ",
+            "url": "https://drive.google.com/uc?id=1SGqGHsV9wIy4RTIIBEMdh4w1C5G585kb",
+            "compile": false
+        },
+        {
+            "question": "Query to implement BETWEEN operator",
+            "code": "-- BETWEEN Operator return values within a range \ncreate database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Kevin', 32, 'BTech', 'Vasundhara'); \ninsert into info values ('Edward', 40, 'BSc', 'London'); \ninsert into info values ('Benjamin', 16, 'BBA', 'Japan'); \ninsert into info values ('Dashie', 39, 'BTech', 'Tokyo'); \n\nselect * from info where Age BETWEEN 20 AND 30; \n-- Here the tuples with ‘Age’ between 20 and 30 will be returned \n-- Note that 20 and 30 will be inclusive in this range ",
+            "url": "https://drive.google.com/uc?id=1qdrZzAzw6qpkitSH9FSvof1fSpuzKb2a",
+            "compile": false
+        },
+        {
+            "question": "Query to implement IN operator",
+            "code": "-- IN Operator allows us to return multiple values \ncreate database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Kevin', 32, 'BTech', 'Vasundhara'); \ninsert into info values ('Edward', 40, 'BSc', 'London'); \ninsert into info values ('Benjamin', 16, 'BBA', 'Japan'); \ninsert into info values ('Dashie', 39, 'BTech', 'Tokyo'); \n\nselect * from info where Name IN('Steve', 'Kevin'); \n-- Here the tuples inside ‘Name’ attribute containing values Steve & Kevin will be returned ",
+            "url": "https://drive.google.com/uc?id=1apijhMvql4H2RqU_f44r8oCYNdrygbk_",
+            "compile": false
+        },
+        {
+            "question": "Query to implement LIKE operator using percentage sign",
+            "code": "-- LIKE operator is used for pattern searching \ncreate database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Kevin', 32, 'BTech', 'Vasundhara'); \ninsert into info values ('Edward', 40, 'BSc', 'London'); \ninsert into info values ('Benjamin', 16, 'BBA', 'Japan'); \ninsert into info values ('Dashie', 39, 'BTech', 'Tokyo'); \n\nselect * from info where Course LIKE 'B%'; \n-- Here % will select and return all the names starting with letter B \n-- Once we’ve used % the number of letters inside a name doesn’t matter ",
+            "url": "https://drive.google.com/uc?id=1hPQUKpfMVo4r_BlQ9EyOdkHMs6L1p4aM",
+            "compile": false
+        },
+        {
+            "question": "Query to implement LIKE operator using underscrore",
+            "code": "-- Underscore works as a value skipper when it is undefined \ncreate database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Kevin', 32, 'BTech', 'Vasundhara'); \ninsert into info values ('Edward', 40, 'BSc', 'London'); \ninsert into info values ('Benjamin', 16, 'BBA', 'Japan'); \ninsert into info values ('Dashie', 39, 'BTech', 'Tokyo'); \n\nselect * from info where Name LIKE '_e%'; \n-- Here underscore skips first value of the Name \n-- The second value of the Name must include 'e' \n-- Then % will select the rest of the letters of the Name ",
+            "url": "https://drive.google.com/uc?id=1VChsNyUprzflKgi5gKmFQLlGoHtrJizA",
+            "compile": false
+        },
+        {
+            "question": "Query to temporarily change the name of an attribute using alias",
+            "code": "create database mydatabase; \ncreate table info (Name char(20), Age int, Course char(5), City char(30)); \ninsert into info values ('John', 21, 'BCA', 'Noida'); \ninsert into info values ('Steve', 25, 'MCA', 'Indirapuram'); \ninsert into info values ('Kevin', 32, 'BTech', 'Vasundhara'); \ninsert into info values ('Edward', 40, 'BSc', 'London'); \ninsert into info values ('Benjamin', 16, 'BBA', 'Japan'); \ninsert into info values ('Dashie', 39, 'BTech', 'Tokyo'); \n\nselect Name AS Full_Name from info; \n-- Here ‘Name’ attribute will be ‘Full_Name’ temporarily ",
+            "url": "https://drive.google.com/uc?id=1DnpmUbVEcLhQiemcGrc9AR5ienU8IiED",
+            "compile": false
+        }
+    ]
+}

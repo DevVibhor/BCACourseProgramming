@@ -1,0 +1,142 @@
+{
+    "data": [
+        {
+            "question": "Program to print your name",
+            "code": "#include <iostream.h> //Header File \n#include <conio.h> //Header File \nvoid main() \n{ \n clrscr(); \n// Clearing Screen for removing Garbage Value \n cout<<\"Hello World\"<<endl;\n// cout is used to print on screen \n getch(); \n// For holding console window \n}",
+            "url": "https://drive.google.com/uc?id=1HQdA5CIYaJVrHKeblyETo-04FpXfHTGv",
+            "compile": false
+        },
+        {
+            "question": "Program to find average of four numbers",
+            "code": "#include <iostream.h> \n#include <conio.h> \nvoid main() \n{ \n int a, b, c, d, avg; \n clrscr(); \n\n cout<<\"Enter the 4 numbers.\"<<endl; \n cin>>a>>b>>c>>d; \n\n avg=(a+b+c+d)/4; \n\n cout<<\"The average of four numbers is \"<<avg<<endl; \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1MKPvVrAyUEXxl0aDJBaD8NvPen6OKs6m",
+            "compile": false
+        },
+        {
+            "question": "Program to implement a class",
+            "code": "#include <iostream.h> \n#include <conio.h> \nclass student // Here 'student' is the name of class  \n{ \n public: // Access Specifier  \n char a[10] ; \n int b ; \n\n void mydata (void); // Function declaration inside class \n} ; \n\nvoid student :: mydata (void) // Function Calling where ' :: ' is scope resolution operator \n{ \n cout<<\"Enter your name: \"<<endl ; \n cin>>a; \n\n cout<<\"Enter your age: \"<<endl ; \n cin>>b; \n\n cout<<\"So your name is \"<<a<<\" and age is \"<<b ; \n} \nvoid main() \n{ \n clrscr(); \n student x ; // Creating object(x) for class(student) \n x.mydata(); // Function Invoking using dot operator \n getch(); \n} ",
+            "url": "https://drive.google.com/uc?id=1hlU6_wTDVca_IB8oXkgv5pqU4iEGLFNx",
+            "compile": false
+        },
+        {
+            "question": "Program to implement a class using two member funcitons",
+            "code": "#include <iostream.h>\n#include <conio.h>\nclass student // Here 'student' is the name of class  \n{ \n  public: // Access Specifier  \n  char a[20]; \n  int b; \n  void getdata (void); // Function Declaration inside class \n  void displaydata (void); // Function Declaration inside class \n}; \n\nvoid student :: getdata (void) // Function Calling where ' :: ' is scope resolution operator \n{ \n cout<<\"Enter your name: \"<endl; \n cin>>a; \n cout<<\"Enter your age: \"<<endl; \n cin>>b; \n} \nvoid student :: displaydata (void) // Function Calling \n{ \n cout<<\"So, your name is \"<<a<<endl; \n cout<<\"So, your age is \"<<b<<endl; \n} \nvoid main() \n{ \n clrscr(); \n student x; // Creating object(x) for class(student) \n x.getdata(); // Function Invoking using dot operator \n x.displaydata(); \n getch(); \n} ",
+            "url": "https://drive.google.com/uc?id=1-oFVtZQie0-WxQzOjvfEg45D4HGJSIvF",
+            "compile": false
+        },
+        {
+            "question": "Program to find factorial of a number using function",
+            "code": "#include <iostream.h> \n#include <conio.h> \nvoid fact() \n{ \n int a, b, f=1; \n clrscr(); \n\n cout<<\"Enter a number: \"<<endl; \n cin>>a; \n\n for (b=a ; b>0 ; b--) \n f = f * b; \n\n cout<<\"Factorial of \"<<a<<\" is: \"<<f; \n} \nvoid main() \n{ \n clrscr(); \n fact(); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1FulwjmXhLGekWfO89BYAtD7s6S7cI889",
+            "compile": false
+        },
+        {
+            "question": "Program of a constructor",
+            "code": "#include <iostream.h> \n#include <conio.h> \nclass student \n{ \n public : \n char a[10] ; \n int b; \n\n student () // Constructor has same name as of class name \n { \n  cout<<\"Enter your name: \"<<endl ; \n  cin>>a; \n\n  cout<<\"Enter your age: \"<<endl ; \n  cin>>b; \n } \n\n void mydata (void) // Member Fuction Calling inside class \n { \n  cout<<\"So your name is \"<<a<<\" and age is \"<<b ; \n } \n}; \nvoid main() \n{ \n clrscr(); \n student x ; // Object (x) is created for Function (mydata) \n x.mydata(); // Constructor is invoked automatically \n getch(); \n} ",
+            "url": "https://drive.google.com/uc?id=1DmQyIK4Bm1VdkBGhaOs1burOGxzXwMku",
+            "compile": false
+        },
+        {
+            "question": "Program to find sum of two numbers using constructor",
+            "code": "#include <iostream.h> \n#include <conio.h> \nclass student \n{ \n public : \n int a, b, c ; \n\n student () \n { \n  cout<<\"Enter two numbers: \"<<endl ; \n  cin>>a>>b ; \n\n  c = a + b ; \n  cout<<\"The sum of two numbers is: \"<<c ; \n } \n}; \nvoid main() \n{ \n clrscr(); \n student(); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=111Mx6fqAfBhhhSrt0x6x7Kt4RgLl876x",
+            "compile": false
+        },
+        {
+            "question": "Program to implement 'this' pointer",
+            "code": "#include <iostream.h> \n#include <conio.h> \nclass student \n{ \n public: \n char a[10]; \n int b; \n\n void mydata (void); \n}; \n\nvoid student::mydata (void) \n{ \n cout<<\"Enter your name: \"<<endl; \n cin>>a; \n\n cout<<\"Enter your age: \"<<endl; \n cin>>b; \n\n cout<<\"The address of object is \"<<this; \n} \n\nvoid main() \n{ \n clrscr(); \n student x; \n x.mydata(); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1P_RamrKcWpEJqg_lBMRpCl-Yl-cHQgPQ",
+            "compile": false
+        },
+        {
+            "question": "Program to implement friend function to add two numbers",
+            "code": "#include <iostream.h> \n#include <conio.h> \nclass student \n{ \n int a, b, c; \n\n public: \n char x[10]; \n\n void data (void); \n friend void mydata (student v); \n}; \n\nvoid student::data (void) \n{ \n cout<<\"Enter your name: \"<<endl; \n cin>>x; \n\n cout<<\"Enter two numbers: \"<<endl; \n cin>>a>>b; \n} \n\nvoid mydata (student v) \n{ \n v.c = v.a + v.b; \n cout<<\"The addition of numbers is \"<<v.c; \n} \n\nvoid main() \n{ \n clrscr(); \n student m; \n m.data(); \n mydata(m); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1hv44Ow85sWz0iXgbB9Pdt4JEY1OmGjW1",
+            "compile": false
+        },
+        {
+            "question": "Program to implement in-line function",
+            "code": "#include <iostream.h> \n#include <conio.h> \n\ninline float average (float a, float b) \n{ \n return ((a+b)/2); \n} \n\ninline int addition (int c, int d) \n{ \n return (c+d); \n} \n\nvoid main() \n{ \n clrscr(); \n int x, y; \n\n cout<<\"Enter two values: \"<<endl; \n cin>>x>>y; \n\n cout<<\"The average of the numbers is: \"<<average (x, y)<<endl; \n\n cout<<\"The addition of two numbers is: \"<<addition (x, y)<<endl; \n\n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1z7yF3cHeTBAB5ML0Go_nFyYx6nvVJs9b",
+            "compile": false
+        },
+        {
+            "question": "Program to implement function overloading",
+            "code": "#include <iostream.h> \n#include <conio.h> \n\nvoid num (int a, int b) \n{ \n cout<<\"The addition is: \"<<a+b<<endl; \n} \n\nvoid num (float c, float d) //Same function name, different data types \n{ \n cout<<\"The division is: \"<<c/d<<endl; \n} \n\nvoid main() \n{ \n int x, y; \n float w, z; \n clrscr(); \n\n cout<<\"Enter the numbers for addition: \"<<endl; \n cin>>x>>y; \n\n cout<<\"Enter the numbers for division: \"<<endl; \n cin>>w>>z; \n\n num(x,y); \n num(w,z); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1RyFkZgXh27noNo_defYnBvA3ZuUEn2w-",
+            "compile": false
+        },
+        {
+            "question": "Program to implement virtual function",
+            "code": "#include <iostream.h> \n#include <conio.h> \n\nclass ADD \n{ \n public: \n virtual void display (int a, int b) \n { \n  cout<<\"The addition is: \"<<a+b<<endl; \n } \n}; \n\nclass SUB : public ADD \n{ \n public: \n void display (int a, int b) \n { \n  cout<<\"The subtraction is: \"<<a-b<<endl; \n } \n}; \n\nclass MULT : public ADD \n{ \n public: \n void display (int a, int b) \n { \n  cout<<\"The multiplication is: \"<<a*b<<endl; \n } \n}; \n\nclass DIV : public ADD \n{ \n public: \n void display (int a, int b) \n { \n  cout<<\"The division is: \"<<a/b<<endl; \n } \n}; \nvoid main() \n{ \n clrscr(); \n int i, j; \n\n cout<<\"Enter the values: \"<<endl; \n cin>>i>>j; \n\n ADD *x; \n ADD m; \n x = &m; \n x-> display (i,j); \n\n SUB n; \n x = &n; \n x-> display (i,j); \n\n MULT o; \n x = &o; \n x-> display (i,j); \n\n DIV p; \n x = &p; \n x-> display (i,j); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=173CGaEJ0xWlEPggZ6ZUiaiG_Oy5limAW",
+            "compile": false
+        },
+        {
+            "question": "Program to implement single-level inheritance",
+            "code": "#include<iostream.h> \n#include<conio.h> \n\nclass A \n{ \n public: \n char name[10]; \n int a; \n void student (void) \n { \n  cout<<\"Enter your name: \"<<endl; \n  cin>>name; \n } \n}; \n\nclass B : public A \n{ \n public: \n void age (void) \n { \n  cout<<\"Enter your age: \"<<endl; \n  cin>>a; \n } \n}; \n\nvoid main() \n{ \n clrscr(); \n B m; \n // Creating object for class B \n // As class B also contains public elements of class A \n m.student(); \n m.age(); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1GeyOFrgPWzrcjIJBumxYFEtK-QRh9BcH",
+            "compile": false
+        },
+        {
+            "question": "Program to implement multi-level inheritance",
+            "code": "#include<iostream.h> \n#include<conio.h> \n\nclass A \n{ \n public: \n int a; \n char name[10]; \n void student (void) \n { \n  cout<<\"Enter your name: \"<<endl; \n  cin>>name; \n } \n}; \n\nclass B : public A \n{ \n public: \n void marks (void) \n { \n  cout<<\"Enter your age: \"<<endl; \n  cin>>a; \n } \n}; \n\nclass C : public B \n{ \n public: \n void data (void) \n { \n  cout<<\"So, your name is: \"<<name; \n  cout<<\" and age is: \"<<a; \n } \n}; \n\nvoid main() \n{ \n clrscr(); \n C m; \n // Creating object for class C as it contains all public elements of class A & B \n m.student(); \n m.marks(); \n m.data(); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1wt62Y8hiU6Frl5RBtyPKHUQ4MQhbgu9E",
+            "compile": false
+        },
+        {
+            "question": "Program to implement multiple inheritance",
+            "code": "#include<iostream.h> \n#include<conio.h> \n\nclass A \n{ \n public: \n char name[10]; \n void student (void) \n { \n  cout<<\"Enter your name: \"<<endl; \n  cin>>name; \n } \n}; \n\nclass B \n{ \n public: \n int a; \n void age (void) \n { \n  cout<<\"Enter your age: \"<<endl; \n  cin>>a; \n } \n}; \n\nclass C : public B, public A \n{ \n public: \n void data (void) \n { \n  cout<<\"So, your name is \"<<name<<\" and your age is \"<<a<<endl; \n } \n}; \n\nvoid main() \n{ \n clrscr(); \n C x; \n x.student(); \n x.age(); \n x.data(); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=14uwQVahu3koE5XnariM57ezCjZhWO6xR",
+            "compile": false
+        },
+        {
+            "question": "Program to implement namespaces",
+            "code": "//Use CodeBlocks for this program \n#include <iostream> \n#include <conio.h> \nusing namespace std; \n namespace first \n { \n  void function (void) \n  { \n   cout<<\"This is first function.\"<<endl; \n  } \n } \n\n namespace second // Different Namespace name \n { \n  void function (void) // Same function name \n  { \n   cout<<\"This is second function.\"<<endl; \n  } \n } \n\nint main() \n{ \n first :: function(); \n second :: function(); \n return 0; \n} ",
+            "url": "https://drive.google.com/uc?id=1TCo0cWQZ2hEggacCDk1Knq-fitdWEO6L",
+            "compile": false
+        },
+        {
+            "question": "Program for creating and writing into a file",
+            "code": "#include <fstream.h> \n#include <conio.h> \nint main() \n{ \n fstream bca; // Text file creation \n ofstream fout; // Object of stream class \n\n fout.open(\"bca.txt\"); // Name of text file \n fout<<\"This is my text file.\"; // Text inside the .txt file \n\n fout.close(); \n return 0; \n}",
+            "url": "https://drive.google.com/uc?id=1RjK09ijNCgdpegaOu4bc-91M4prSemHn",
+            "compile": false
+        },
+        {
+            "question": "Program for finding greater between two numbers using function template",
+            "code": "#include <iostream.h> \n#include <conio.h> \ntemplate <class BCA> \nBCA large (BCA n1, BCA n2) \n{ \n return (n1>n2)?n1:n2; \n} \n\nclass BCA \n{ \n public: \n int a, b; \n void mydata (void); \n}; \n\nvoid BCA :: mydata (void) \n{ \n cout<<\"Enter two numbers: \"<<endl; \n cin>>a>>b; \n\n cout<<\"The larger numbers is: \"<<large(a, b); \n} \n\nvoid main() \n{ \n clrscr(); \n BCA x; \n x.mydata (); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1dyzddwMprwxzmYtBKh4PSIxPRKC66R07",
+            "compile": false
+        },
+        {
+            "question": "Program for adding two numbers using function template",
+            "code": "#include <iostream.h> \n#include <conio.h> \n\ntemplate <class BCA> \nBCA sum (BCA n1, BCA n2) \n{ \n return (n1+n2); \n} \n\nclass BCA \n{ \n public: \n int a, b; \n void mydata (void); \n}; \n\nvoid BCA :: mydata (void) \n{ \n cout<<\"Enter two numbers: \"<<endl; \n cin>>a>>b; \n\n cout<<\"The addition is: \"<<sum(a, b); \n} \n\nvoid main() \n{ \n clrscr(); \n BCA x; \n x.mydata (); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1qR_GK_0vvw8g1E-a9SFLyJ_1ZnjScLmS",
+            "compile": false
+        },
+        {
+            "question": "Program to implement operator overloading ",
+            "code": "#include <iostream.h> \n#include <conio.h> \nclass BCA \n{ \n public: \n int rollno; \n float age; \n char grade; \n\n BCA (int rn, float ag, char g) \n { \n  rollno = rn; \n  age = ag; \n  grade = g; \n } \n\n void operator ++ (int) \n { \n  rollno = rollno + 1; \n  age = age + 1; \n  grade = grade + 1; \n } \n}; \n\nvoid main() \n{ \n clrscr(); \n BCA obj(20, 5.0, 'A'); \n  cout<<\"Before overloading the values of variables are: \\n\"; \n cout<<obj.rollno<<endl<<obj.age<<endl<<obj.grade; \n obj++; \n\n cout<<\"\\nAfter overloading the values of variables are: \\n\"; \n cout<<obj.rollno<<endl<<obj.age<<endl<<obj.grade; \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1WJVRicWo_iDDYFRHdmNuP9ikMq4dd-JF",
+            "compile": false
+        },
+        {
+            "question": "Program to create a class name employee and set their age, years of service, salary and print them",
+            "code": "#include <iostream.h> \n#include <conio.h> \nclass employee \n{ \n public: \n int age, service; \n double salary; \n char name[25]; \n\n void data (void) \n { \n  cout<<\"Enter employee's name: \"<<endl; \n  cin>>name; \n\n  cout<<\"Enter employee's age: \"<<endl; \n  cin>>age; \n\n  cout<<\"Enter employee's years of service: \"<<endl; \n  cin>>service; \n\n  cout<<\"Enter employee's salary: \"<<endl; \n  cin>>salary; \n } \n\n void display_data (void) \n { \n  cout<<\"Employee's name is: \"<<name<<endl; \n  cout<<\"Employee's age is: \"<<age<<endl; \n  cout<<\"Employee's years of service is: \"<<service<<endl; \n  cout<<\"Employee's salary is: \"<<salary; \n } \n}; \n\nvoid main() \n{ \n clrscr(); \n employee x; \n x.data (); \n x.display_data (); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1tanJ8T9OTc40umxNUEyskfUtOQesgEH7",
+            "compile": false
+        },
+        {
+            "question": "Program to create a class name 'max' with 3 integer data types members, first function store the inputs, second function display the greatest between the 3 ",
+            "code": "#include <iostream.h> \n#include <conio.h> \nclass max \n{ \n public: \n int a, b, c; \n\n void data (void) \n { \n  cout<<\"Enter the 3 integer values: \"<<endl; \n  cin>>a>>b>>c; \n } \n\n void display_data (void) \n { \n  if ( a>b && a>c ) \n  { \n   cout<<\"The greatest value is: \"<<a; \n  } \n\n  else if ( b>a && b>c ) \n  { \n   cout<<\"The greatest value is: \"<<b; \n  } \n\n  else if ( c>a && c>b ) \n  { \n   cout<<\"The greatest value is: \"<<c; \n  } \n\n  else \n  { \n   cout<<\"Error!\"; \n  } \n } \n}; \n\nvoid main() \n{ \n clrscr(); \n max x; \n x.data (); \n x.display_data (); \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=1xdlu7RTH8ApGQLkQlOAKSbjS5CtAgoXR",
+            "compile": false
+        },
+        {
+            "question": "Program to find the fibonacci series using constructor",
+            "code": "#include <iostream.h> \n#include <conio.h> \nclass fibonacci \n{ \n public: \n int a, b, x, y, z; \n\n fibonacci () \n { \n  x= 0; \n  y= 1; \n  cout<<\"Enter a positive integer: \"<<endl; \n  cin>>a; \n\n  cout<<\"The Fibonacci Series is: \"<<endl; \n  for ( b=1; b<=a; ++b) \n  { \n   cout<<x<<\"\\t\"; \n   z = x + y; \n   x = y; \n   y = z; \n  } \n } \n}; \n\nvoid main() \n{ \n clrscr(); \n fibonacci x; \n getch(); \n}",
+            "url": "https://drive.google.com/uc?id=116YKO_aKDBr0IwGa1SHfNrmU4ScVGtpf",
+            "compile": false
+        }
+    ]
+}
